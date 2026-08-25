@@ -1,0 +1,55 @@
+name: RSI Scanner + Telegram Alerts
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "*/15 * * * *"
+
+permissions:
+  contents: write
+
+jobs:
+  rsi-scan:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Build RSI universe from StockStory
+        env:
+          FAVORITES_API_URL: ${{ secrets.FAVORITES_API_URL }}
+        run: python src/build_rsi_universe.py
+
+      - name: Run RSI scanner
+        env:
+          UPSTOX_ACCESS_TOKEN: ${{ secrets.UPSTOX_ACCESS_TOKEN }}
+        run: python rsi/RSI_Scanner.py
+
+      - name: Send Telegram setup alerts
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+        run: python rsi/send_telegram_alerts.py
+
+      - name: Commit RSI data
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add rsi/My-Stocks.csv rsi/latest_results.csv rsi/latest_results.json rsi/RSI_History.csv rsi/RSI_Monitoring_State.csv rsi/RSI_Scan_Cycle.json rsi/Setup_History.csv rsi/Telegram_Alert_History.csv
+          if git diff --cached --quiet; then
+            echo "No RSI changes to commit."
+          else
+            git commit -m "Update RSI scanner and alerts"
+            git push
+          fi

@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Nifty Sector Relative Strength</title>
+
+    <link
+        rel="stylesheet"
+        href="styles.css"
+    >
+</head>
+
+<body>
+
+<div class="app">
+
+    <header class="hero-header">
+        <div class="hero-content">
+            <div class="hero-brand">
+                <div class="hero-icon" aria-hidden="true">
+                    <span>↗</span>
+                </div>
+                <div class="eyebrow">MARKET INTELLIGENCE</div>
+            </div>
+
+            <h1>Nifty Sector Relative Strength</h1>
+
+            <div class="hero-meta">
+                <div class="hero-meta-item">
+                    <div class="hero-meta-icon calendar-icon" aria-hidden="true">□</div>
+                    <div>
+                        <span>Last fetch</span>
+                        <strong id="lastUpdated">Loading latest data...</strong>
+                    </div>
+                </div>
+
+                <div class="hero-divider"></div>
+
+                <div class="hero-meta-item">
+                    <div class="hero-meta-icon clock-icon" aria-hidden="true">◷</div>
+                    <div>
+                        <span>LTP fetched</span>
+                        <strong id="fetchInfo">LTP: loading...</strong>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="hero-graphic" aria-hidden="true">
+            <div class="hero-bars">
+                <i></i><i></i><i></i><i></i><i></i><i></i>
+            </div>
+            <div class="hero-arrow">↗</div>
+            <div class="hero-glow"></div>
+        </div>
+
+        <div class="hero-data" aria-hidden="true">
+            <span id="stockCount">—</span>
+            <span id="sectorCount">—</span>
+            <span id="dataStatus">Loading</span>
+            <span id="ltpCoverage">—</span>
+        </div>
+    </header>
+
+
+    <main>
+
+
+
+        <!-- LEADERSHIP -->
+        <section class="section leadership-section" id="leadershipSection">
+
+            <div class="leadership-heading">
+                <div>
+                    <div class="leadership-title">
+                        <span class="leadership-crown" aria-hidden="true">♛</span>
+                        <h2>LEADERSHIP</h2>
+                    </div>
+                    <div class="leadership-underline">
+                        <span></span><i></i>
+                    </div>
+                </div>
+            </div>
+
+            <div
+                id="leadershipPanel"
+                class="leadership-panel active"
+                role="tabpanel"
+                aria-labelledby="leadershipSection"
+            >
+
+                <div class="leadership-quick-grid">
+
+                    <a
+                        class="leadership-quick-card leadership-blue"
+                        href="#sectorLeadershipDetails"
+                        aria-label="View top index and sectors"
+                    >
+                        <div class="quick-card-icon">◔</div>
+                        <div class="quick-card-copy">
+                            <h3>Top Index / Sectors</h3>
+                            <p>View top performing indices<br>and sectors</p>
+                        </div>
+                        <span class="quick-card-arrow">›</span>
+                    </a>
+
+                    <a
+                        class="leadership-quick-card leadership-purple"
+                        href="#topSectorStocksSection"
+                        aria-label="View top two sectors and top ten stocks"
+                    >
+                        <div class="quick-card-icon">★</div>
+                        <div class="quick-card-copy">
+                            <h3>Top 2 Sectors &amp;<br>Top 10 Stocks</h3>
+                            <p>Explore top sectors and<br>their leading stocks</p>
+                        </div>
+                        <span class="quick-card-arrow">›</span>
+                    </a>
+
+                </div>
+
+                <section
+                    class="section leadership-inner-section leadership-detail-section"
+                    id="sectorLeadershipDetails"
+                >
+                    <div class="section-heading">
+                        <div>
+                            <span class="section-label">LEADERSHIP</span>
+                            <h2>Top Index / Sectors</h2>
+                        </div>
+                        <div class="section-note">Ranked by average 3M RS</div>
+                    </div>
+
+                    <div id="sectorCards" class="sector-grid">
+                        <div class="loading">Loading sectors...</div>
+                    </div>
+                </section>
+
+            </div>
+
+        </section>
+
+        <!-- RS MOMENTUM & VOLUME SCANNER -->
+        <section class="section scanner-section" id="momentumVolumeSection">
+
+            <div class="scanner-shell">
+
+                <div class="scanner-heading">
+                    <div class="scanner-heading-copy">
+                        <div class="scanner-heading-icon" aria-hidden="true">⌕</div>
+                        <div>
+                            <h2>RS Momentum &amp; Volume Scanner</h2>
+                            <p>Identify stocks with improving relative strength and unusual volume</p>
+                        </div>
+                    </div>
+
+                    <div class="scanner-tabs">
+                        <button class="scanner-tab active" data-scanner="momentum">
+                            <span>↗</span> RS Momentum
+                        </button>
+                        <button class="scanner-tab" data-scanner="volume">
+                            <span>🔥</span> Volume Gainers
+                        </button>
+                        <button class="scanner-tab" data-scanner="combined">
+                            <span>🚀</span> RS + Volume
+                        </button>
+                        <button class="scanner-tab" data-scanner="favorites">
+                            <span>⭐</span> Favorites
+                        </button>
+                    </div>
+                </div>
+
+                <!-- RS MOMENTUM -->
+                <div id="rsMomentumPanel" class="scanner-panel active">
+                    <div class="scanner-summary">
+                        <div class="scanner-stat">
+                            <span>Stocks</span>
+                            <strong id="momentumStockCount">—</strong>
+                        </div>
+                        <div class="scanner-stat">
+                            <span>Positive Momentum</span>
+                            <strong id="positiveMomentumCount">—</strong>
+                        </div>
+                        <div class="scanner-stat">
+                            <span>Consistent</span>
+                            <strong id="consistentStockCount">—</strong>
+                        </div>
+                    </div>
+
+                    <div class="table-wrap scanner-table-wrap">
+                        <table class="scanner-table">
+                            <thead>
+                                <tr>
+                                    <th>#</th><th>Stock</th><th>Company</th><th>RS 3M</th>
+                                    <th>10D Change</th><th>Momentum</th><th>Consistency</th>
+                                    <th>RS Trend</th><th>LTP</th><th>Today</th>
+                                </tr>
+                            </thead>
+                            <tbody id="rsMomentumBody">
+                                <tr><td colspan="10" class="loading">Loading RS momentum...</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <!-- VOLUME GAINERS -->
+                <div id="volumeGainersPanel" class="scanner-panel">
+                    <div class="scanner-summary">
+                        <div class="scanner-stat">
+                            <span>Stocks</span>
+                            <strong id="volumeStockCount">—</strong>
+                        </div>
+                        <div class="scanner-stat">
+                            <span>Volume &gt; 2x</span>
+                            <button id="highVolumeCount" class="scanner-count-button" type="button">—</button>
+                        </div>
+                        <div class="scanner-stat">
+                            <span>Volume &gt; 3x</span>
+                            <button id="veryHighVolumeCount" class="scanner-count-button" type="button">—</button>
+                        </div>
+                    </div>
+
+                    <div class="table-wrap scanner-table-wrap">
+                        <table class="scanner-table">
+                            <thead>
+                                <tr>
+                                    <th>#</th><th>Stock</th><th>Company</th><th>LTP</th><th>Today</th>
+                                    <th>Volume</th><th>10D Avg</th><th>Ratio</th><th>Volume Change</th><th>RS 3M</th>
+                                </tr>
+                            </thead>
+                            <tbody id="volumeGainersBody">
+                                <tr><td colspan="10" class="loading">Loading volume gainers...</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <!-- RS + VOLUME -->
+                <div id="combinedScannerPanel" class="scanner-panel">
+                    <div class="scanner-summary">
+                        <div class="scanner-stat">
+                            <span>RS + Volume</span>
+                            <strong id="combinedStockCount">—</strong>
+                        </div>
+                        <div class="scanner-stat">
+                            <span>RS Improving</span>
+                            <strong id="combinedMomentumCount">—</strong>
+                        </div>
+                        <div class="scanner-stat">
+                            <span>Volume &gt; 1.5x</span>
+                            <strong id="combinedVolumeCount">—</strong>
+                        </div>
+                    </div>
+
+                    <div class="table-wrap scanner-table-wrap">
+                        <table class="scanner-table">
+                            <thead>
+                                <tr>
+                                    <th>#</th><th>Stock</th><th>Company</th><th>LTP</th><th>Today</th>
+                                    <th>RS 3M</th><th>10D RS</th><th>Momentum</th><th>Vol Ratio</th><th>Vol Change</th>
+                                </tr>
+                            </thead>
+                            <tbody id="combinedScannerBody">
+                                <tr><td colspan="10" class="loading">Loading RS + volume...</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <!-- FAVORITES -->
+                <div id="favoritesPanel" class="scanner-panel">
+                    <div class="scanner-summary">
+                        <div class="scanner-stat">
+                            <span>Favorite Stocks</span>
+                            <strong id="favoritesCount">0</strong>
+                        </div>
+                        <div class="scanner-stat">
+                            <span>Permanent</span>
+                            <strong>Cloud</strong>
+                        </div>
+                        <div class="scanner-stat">
+                            <span>Reasons</span>
+                            <strong>Multi-select</strong>
+                        </div>
+                    </div>
+
+                    <div class="table-wrap scanner-table-wrap favorites-table-wrap">
+                        <table class="scanner-table favorites-table">
+                            <thead>
+                                <tr>
+                                    <th>#</th><th>Stock</th><th>Sector</th><th>LTP</th><th>Today</th>
+                                    <th>RS 3M</th><th>Consistency</th>
+                                    <th>Reasons</th><th>Notes</th><th>Chart</th><th>Action</th>
+                                </tr>
+                            </thead>
+                            <tbody id="favoritesBody">
+                                <tr><td colspan="11" class="loading">Loading favorites...</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- STOCK AREA -->
+
+        <section class="section">
+
+            <div class="section-heading">
+
+                <div>
+                    <span class="section-label">
+                        STOCKS
+                    </span>
+
+                    <h2>
+                        Relative Strength Scanner
+                    </h2>
+                    <p class="section-subtitle">Search, filter and compare the full stock universe</p>
+                </div>
+
+            </div>
+
+
+            <div class="filters">
+
+                <div class="search-box">
+
+                    <input
+                        id="searchInput"
+                        type="text"
+                        placeholder="Search stock or company..."
+                    >
+
+                </div>
+
+
+                <select id="sectorFilter">
+
+                    <option value="ALL">
+                        All Index / Sectors
+                    </option>
+
+                </select>
+
+
+                <select id="periodFilter">
+
+                    <option value="RS">
+                        RS 3M
+                    </option>
+
+                    <option value="1M">
+                        1M
+                    </option>
+
+                    <option value="3M">
+                        3M Return
+                    </option>
+
+                    <option value="6M">
+                        6M
+                    </option>
+
+                    <option value="YTD">
+                        YTD
+                    </option>
+
+                    <option value="Daily">
+                        Daily
+                    </option>
+
+                    <option value="Weekly">
+                        Weekly
+                    </option>
+
+                </select>
+
+
+                <button
+                    id="clearFilters"
+                    class="clear-button"
+                >
+                    Clear
+                </button>
+
+            </div>
+
+
+            <div class="table-wrap">
+
+                <table>
+
+                    <thead>
+
+                        <tr>
+
+                            <th>#</th>
+
+                            <th
+                                data-sort="Symbol"
+                                class="sortable"
+                            >
+                                Stock
+                            </th>
+
+                            <th
+                                data-sort="Company Name"
+                                class="sortable"
+                            >
+                                Company
+                            </th>
+
+                            <th>Index / Sector</th>
+
+                            <th
+                                data-sort="Daily"
+                                class="sortable numeric"
+                            >
+                                Daily
+                            </th>
+
+                            <th
+                                data-sort="Weekly"
+                                class="sortable numeric"
+                            >
+                                Weekly
+                            </th>
+
+                            <th
+                                data-sort="1M"
+                                class="sortable numeric"
+                            >
+                                1M
+                            </th>
+
+                            <th
+                                data-sort="3M"
+                                class="sortable numeric"
+                            >
+                                3M
+                            </th>
+
+                            <th
+                                data-sort="6M"
+                                class="sortable numeric"
+                            >
+                                6M
+                            </th>
+
+                            <th
+                                data-sort="YTD"
+                                class="sortable numeric"
+                            >
+                                YTD
+                            </th>
+
+                            <th
+                                data-sort="RS"
+                                class="sortable numeric"
+                            >
+                                RS 3M
+                            </th>
+
+                            <th
+                                data-sort="LTP"
+                                class="sortable numeric"
+                            >
+                                LTP
+                            </th>
+
+                            <th>Chart</th>
+
+                        </tr>
+
+                    </thead>
+
+                    <tbody id="stockTableBody">
+
+                        <tr>
+
+                            <td
+                                colspan="13"
+                                class="loading"
+                            >
+                                Loading stocks...
+                            </td>
+
+                        </tr>
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+
+            <div
+                id="resultCount"
+                class="result-count"
+            ></div>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+
+        <span>
+            Nifty Sector RS
+        </span>
+
+        <span>
+            Data powered by Upstox
+        </span>
+
+    </footer>
+
+</div>
+
+
+<script src="app.js"></script>
+
+<!-- RS HISTORY MODAL -->
+<div id="rsHistoryModal" class="rs-history-modal">
+
+    <div class="rs-history-backdrop"
+         onclick="closeRSHistoryModal()"></div>
+
+    <div class="rs-history-dialog">
+
+        <div class="rs-history-header">
+
+            <div>
+                <span class="rs-history-label">
+                    RELATIVE STRENGTH
+                </span>
+
+                <h2 id="rsHistoryTitle">
+                    Stock — 10 Day RS
+                </h2>
+            </div>
+
+            <button
+                class="rs-history-close"
+                onclick="closeRSHistoryModal()"
+                aria-label="Close"
+            >
+                ×
+            </button>
+
+        </div>
+
+
+        <div class="rs-history-stats">
+
+            <div>
+                <span>10D Change</span>
+                <strong id="rsHistoryChange">—</strong>
+            </div>
+
+            <div>
+                <span>Highest RS</span>
+                <strong id="rsHistoryHigh">—</strong>
+            </div>
+
+            <div>
+                <span>Lowest RS</span>
+                <strong id="rsHistoryLow">—</strong>
+            </div>
+
+            <div>
+                <span>Average RS</span>
+                <strong id="rsHistoryAverage">—</strong>
+            </div>
+
+        </div>
+
+
+        <div class="rs-history-chart-wrap">
+
+            <div class="rs-history-chart-title">
+                RS Trend — Last 10 Trading Days
+            </div>
+
+            <div
+                id="rsHistoryChart"
+                class="rs-history-chart"
+            ></div>
+
+        </div>
+
+
+        <div class="rs-history-table-wrap">
+
+            <table class="rs-history-table">
+
+                <thead>
+                    <tr>
+                        <th>Trading Day</th>
+                        <th>RS</th>
+                        <th>Change</th>
+                    </tr>
+                </thead>
+
+                <tbody id="rsHistoryBody"></tbody>
+
+            </table>
+
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+</html>
