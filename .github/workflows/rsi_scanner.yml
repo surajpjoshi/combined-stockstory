@@ -3,7 +3,7 @@ name: RSI Scanner + Telegram Alerts
 on:
   workflow_dispatch:
   schedule:
-    - cron: "*/15 * * * *"
+    - cron: "*/16 * * * *"
 
 permissions:
   contents: write
