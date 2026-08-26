@@ -1,0 +1,353 @@
+/* =========================================================
+   RSI TRADING — COMPACT TABLE
+   Hides: Universe, Reason, Scan Time
+   Keeps:
+   # | Stock | Status | Weekly RSI | Hourly RSI | LTP | Favorite Context
+   ========================================================= */
+
+.rsi-section {
+    margin-top: 28px !important;
+    --rsi-green: #34e0a1;
+    --rsi-amber: #f6b73c;
+    --rsi-red: #ff5c78;
+    --rsi-pink: #ff5fa2;
+    --rsi-fav-text: #b7c3f2;
+}
+
+.rsi-shell {
+    overflow: hidden !important;
+    background: var(--card-bg, rgba(255,255,255,.03)) !important;
+    border: 1px solid var(--border, rgba(255,255,255,.09)) !important;
+    border-radius: 18px !important;
+    padding: 22px 24px !important;
+    box-shadow: var(--shadow, 0 10px 34px rgba(0,0,0,.45)) !important;
+}
+
+/* ---------- Header ---------- */
+
+.rsi-heading {
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: flex-end !important;
+    gap: 20px !important;
+}
+
+.rsi-updated {
+    white-space: nowrap !important;
+    color: var(--muted, #8790a8) !important;
+    font-size: 12px !important;
+}
+
+.rsi-updated strong {
+    color: #f4f6fc !important;
+    font-weight: 700 !important;
+}
+
+/* ---------- Summary ---------- */
+
+.rsi-summary {
+    display: grid !important;
+    grid-template-columns: repeat(5, minmax(0, 1fr)) !important;
+    gap: 9px !important;
+    width: 100% !important;
+    margin-top: 18px !important;
+}
+
+.rsi-stat {
+    min-width: 0 !important;
+    min-height: 58px !important;
+    padding: 11px 13px !important;
+    background: rgba(255,255,255,.035) !important;
+    border: 1px solid rgba(255,255,255,.08) !important;
+    border-radius: 13px !important;
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+    gap: 6px !important;
+}
+
+.rsi-stat span {
+    display: block !important;
+    color: var(--muted, #8790a8) !important;
+    font-size: 10.5px !important;
+    font-weight: 800 !important;
+    letter-spacing: .07em !important;
+    text-transform: uppercase !important;
+    white-space: nowrap !important;
+    overflow: hidden !important;
+    text-overflow: ellipsis !important;
+}
+
+.rsi-stat strong {
+    display: block !important;
+    font-size: 26px !important;
+    font-weight: 800 !important;
+    letter-spacing: -.02em !important;
+    color: #f4f6fc !important;
+}
+
+.rsi-stat.watch strong {
+    color: var(--rsi-amber) !important;
+}
+
+.rsi-stat.monitor strong {
+    color: var(--rsi-red) !important;
+}
+
+.rsi-stat.favorite strong {
+    color: var(--rsi-pink) !important;
+}
+
+/* ---------- Tabs ---------- */
+
+.rsi-tabs {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    gap: 8px !important;
+    margin-top: 16px !important;
+}
+
+.rsi-tab {
+    display: inline-flex !important;
+    align-items: center !important;
+    gap: 6px !important;
+    border: 1px solid rgba(255,255,255,.10) !important;
+    background: rgba(255,255,255,.04) !important;
+    color: var(--muted, #8790a8) !important;
+    padding: 9px 15px !important;
+    border-radius: 10px !important;
+    font-weight: 700 !important;
+    font-size: 13px !important;
+    cursor: pointer !important;
+    transition: transform .15s ease, border-color .15s ease, background .15s ease, color .15s ease !important;
+}
+
+.rsi-tab:hover {
+    transform: translateY(-1px) !important;
+    border-color: rgba(255,255,255,.2) !important;
+    color: #f4f6fc !important;
+}
+
+.rsi-tab.active {
+    background: rgba(52,224,161,.08) !important;
+    border-color: var(--rsi-green) !important;
+    color: #f4f6fc !important;
+    box-shadow: 0 0 0 1px rgba(52,224,161,.15) !important;
+}
+
+/* =========================================================
+   HIDE UNIVERSE / REASON / SCAN TIME
+   Original columns:
+   1 # 
+   2 Stock
+   3 Status
+   4 Weekly RSI
+   5 Hourly RSI
+   6 LTP
+   7 Universe       ← HIDE
+   8 Favorite Context
+   9 Reason         ← HIDE
+   10 Scan Time     ← HIDE
+   ========================================================= */
+
+.rsi-table-wrap .rsi-table th:nth-child(7),
+.rsi-table-wrap .rsi-table td:nth-child(7),
+.rsi-table-wrap .rsi-table th:nth-child(9),
+.rsi-table-wrap .rsi-table td:nth-child(9),
+.rsi-table-wrap .rsi-table th:nth-child(10),
+.rsi-table-wrap .rsi-table td:nth-child(10) {
+    display: none !important;
+}
+
+/* ---------- Table ---------- */
+
+.rsi-table-wrap {
+    display: block !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    overflow-x: auto !important;
+    overflow-y: hidden !important;
+}
+
+.rsi-table-wrap .rsi-table {
+    width: 100% !important;
+    min-width: 850px !important;
+    max-width: none !important;
+    table-layout: fixed !important;
+    border-collapse: separate !important;
+    border-spacing: 0 !important;
+}
+
+/* Visible columns after hiding 7, 9, 10:
+   # / Stock / Status / Weekly / Hourly / LTP / Favorite */
+
+.rsi-table-wrap .rsi-table th:nth-child(1),
+.rsi-table-wrap .rsi-table td:nth-child(1) {
+    width: 5% !important;
+}
+
+.rsi-table-wrap .rsi-table th:nth-child(2),
+.rsi-table-wrap .rsi-table td:nth-child(2) {
+    width: 15% !important;
+}
+
+.rsi-table-wrap .rsi-table th:nth-child(3),
+.rsi-table-wrap .rsi-table td:nth-child(3) {
+    width: 12% !important;
+}
+
+.rsi-table-wrap .rsi-table th:nth-child(4),
+.rsi-table-wrap .rsi-table td:nth-child(4) {
+    width: 12% !important;
+}
+
+.rsi-table-wrap .rsi-table th:nth-child(5),
+.rsi-table-wrap .rsi-table td:nth-child(5) {
+    width: 12% !important;
+}
+
+.rsi-table-wrap .rsi-table th:nth-child(6),
+.rsi-table-wrap .rsi-table td:nth-child(6) {
+    width: 12% !important;
+}
+
+.rsi-table-wrap .rsi-table th:nth-child(8),
+.rsi-table-wrap .rsi-table td:nth-child(8) {
+    width: 32% !important;
+}
+
+/* ---------- Cells ---------- */
+
+.rsi-table-wrap .rsi-table th,
+.rsi-table-wrap .rsi-table td {
+    padding: 9px 8px !important;
+    box-sizing: border-box !important;
+    overflow: hidden !important;
+    vertical-align: middle !important;
+}
+
+.rsi-table-wrap .rsi-table thead th {
+    height: 38px !important;
+    white-space: nowrap !important;
+}
+
+.rsi-table-wrap .rsi-table tbody td {
+    height: 64px !important;
+}
+
+/* ---------- Rank ---------- */
+
+.rsi-rank {
+    text-align: center !important;
+    color: #7f8ba3 !important;
+}
+
+/* ---------- Stock / Chartink ---------- */
+
+.rsi-table-wrap .rsi-symbol {
+    display: inline-flex !important;
+    align-items: center !important;
+    gap: 4px !important;
+    max-width: 100% !important;
+    overflow: hidden !important;
+    white-space: nowrap !important;
+    text-overflow: ellipsis !important;
+    color: var(--rsi-green) !important;
+    font-weight: 800 !important;
+    letter-spacing: .01em !important;
+    text-decoration: none !important;
+}
+
+.rsi-table-wrap .rsi-symbol:hover {
+    text-decoration: underline !important;
+}
+
+/* ---------- Status ---------- */
+
+.rsi-table-wrap .rsi-category {
+    display: inline-flex !important;
+    align-items: center !important;
+    max-width: 100% !important;
+    overflow: hidden !important;
+    text-overflow: ellipsis !important;
+    white-space: nowrap !important;
+    padding: 5px 12px !important;
+    border-radius: 8px !important;
+    font-size: 10.5px !important;
+    font-weight: 800 !important;
+    letter-spacing: .04em !important;
+    text-transform: uppercase !important;
+    background: rgba(255,255,255,.06) !important;
+    color: var(--muted, #8790a8) !important;
+}
+
+.rsi-table-wrap .rsi-category[class*="watch" i] {
+    background: rgba(246,183,60,.14) !important;
+    color: var(--rsi-amber) !important;
+}
+
+.rsi-table-wrap .rsi-category[class*="setup" i] {
+    background: rgba(255,138,76,.16) !important;
+    color: #ff8a4c !important;
+}
+
+.rsi-table-wrap .rsi-category[class*="monitor" i] {
+    background: rgba(255,92,120,.14) !important;
+    color: var(--rsi-red) !important;
+}
+
+.rsi-table-wrap .rsi-category[class*="favorite" i] {
+    background: rgba(255,95,162,.14) !important;
+    color: var(--rsi-pink) !important;
+}
+
+/* ---------- Favorite Context ---------- */
+
+.rsi-table-wrap .rsi-favorite {
+    display: block !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    overflow: hidden !important;
+    font-size: 11.5px !important;
+    line-height: 1.3 !important;
+    color: var(--rsi-fav-text) !important;
+}
+
+.rsi-table-wrap .rsi-favorite > div:first-child {
+    display: -webkit-box !important;
+    -webkit-box-orient: vertical !important;
+    -webkit-line-clamp: 2 !important;
+    overflow: hidden !important;
+    text-overflow: ellipsis !important;
+}
+
+.rsi-table-wrap .rsi-note {
+    display: block !important;
+    max-width: 100% !important;
+    overflow: hidden !important;
+    white-space: nowrap !important;
+    text-overflow: ellipsis !important;
+}
+
+/* ---------- Mobile ---------- */
+
+@media (max-width: 1100px) {
+    .rsi-summary {
+        grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+    }
+}
+
+@media (max-width: 760px) {
+    .rsi-heading {
+        align-items: flex-start !important;
+        flex-direction: column !important;
+    }
+
+    .rsi-summary {
+        grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    }
+
+    .rsi-updated {
+        white-space: normal !important;
+    }
+}

@@ -1,4 +1,5 @@
-"""Send one Telegram alert for each newly recorded RSI setup."""
+"""Send Telegram alerts for newly recorded RSI setups."""
+
 from pathlib import Path
 from html import escape
 import os
@@ -6,12 +7,18 @@ import pandas as pd
 import requests
 from urllib.parse import quote
 
+
 ROOT = Path(__file__).resolve().parents[1]
+
 SETUP_HISTORY = ROOT / "rsi" / "Setup_History.csv"
 ALERT_HISTORY = ROOT / "rsi" / "Telegram_Alert_History.csv"
 
 BOT_TOKEN = os.getenv("TELEGRAM_BOT_TOKEN", "").strip()
 CHAT_ID = os.getenv("TELEGRAM_CHAT_ID", "").strip()
+
+# Temporary testing switch.
+# Set TELEGRAM_TEST_MODE=true to send one test message.
+TEST_MODE = os.getenv("TELEGRAM_TEST_MODE", "").strip().lower() == "true"
 
 
 def chartink_url(symbol):
@@ -22,67 +29,148 @@ def chartink_url(symbol):
 def load_alert_history():
     if not ALERT_HISTORY.exists():
         return set()
+
     try:
-        df = pd.read_csv(ALERT_HISTORY, dtype=str, keep_default_na=False)
-        return set(df.get("Setup ID", pd.Series(dtype=str)).astype(str))
+        df = pd.read_csv(
+            ALERT_HISTORY,
+            dtype=str,
+            keep_default_na=False
+        )
+        return set(
+            df.get(
+                "Setup ID",
+                pd.Series(dtype=str)
+            ).astype(str)
+        )
     except Exception:
         return set()
 
 
 def append_alert_history(rows):
-    new = pd.DataFrame(rows, columns=["Setup ID", "Sent At", "Symbol"])
+    new = pd.DataFrame(
+        rows,
+        columns=["Setup ID", "Sent At", "Symbol"]
+    )
+
     if ALERT_HISTORY.exists():
         try:
-            old = pd.read_csv(ALERT_HISTORY, dtype=str, keep_default_na=False)
-            new = pd.concat([old, new], ignore_index=True)
+            old = pd.read_csv(
+                ALERT_HISTORY,
+                dtype=str,
+                keep_default_na=False
+            )
+            new = pd.concat(
+                [old, new],
+                ignore_index=True
+            )
         except Exception:
             pass
-    new.drop_duplicates("Setup ID", keep="last").to_csv(
-        ALERT_HISTORY, index=False, encoding="utf-8-sig"
+
+    new.drop_duplicates(
+        "Setup ID",
+        keep="last"
+    ).to_csv(
+        ALERT_HISTORY,
+        index=False,
+        encoding="utf-8-sig"
     )
 
 
 def format_reasons(value):
     text = str(value or "").strip()
+
     if not text:
         return ""
+
     return text.replace(" | ", "\n• ")
 
 
 def build_message(row):
-    symbol = str(row.get("Symbol", "")).strip().upper()
+    symbol = str(
+        row.get("Symbol", "")
+    ).strip().upper()
+
     link = chartink_url(symbol)
-    sources = str(row.get("Universe Sources", "")).strip()
-    periods = str(row.get("Universe Periods", "")).strip()
-    sectors = str(row.get("Universe Sectors", "")).strip()
-    reasons = format_reasons(row.get("Favorite Reasons", ""))
-    notes = str(row.get("Favorite Notes", "")).strip()
+
+    sources = str(
+        row.get("Universe Sources", "")
+    ).strip()
+
+    periods = str(
+        row.get("Universe Periods", "")
+    ).strip()
+
+    sectors = str(
+        row.get("Universe Sectors", "")
+    ).strip()
+
+    reasons = format_reasons(
+        row.get("Favorite Reasons", "")
+    )
+
+    notes = str(
+        row.get("Favorite Notes", "")
+    ).strip()
 
     lines = [
         "🚨 <b>RSI SETUP DETECTED</b>",
         "",
-        f"<a href=\"{escape(link, quote=True)}\"><b>{escape(symbol)}</b></a>",
-        "━━━━━━━━━━━━━━━━",
-        f"<b>Setup:</b> {escape(str(row.get('Reason', '')))}",
-        f"<b>Weekly RSI:</b> {escape(str(row.get('Current Week RSI', '')))}",
-        f"<b>Hourly RSI:</b> {escape(str(row.get('Current Hourly RSI', '')))}",
-        f"<b>15m Close:</b> {escape(str(row.get('Completed 15m Close', '')))}",
+        f'<a href="{escape(link, quote=True)}">'
+        f"<b>{escape(symbol)}</b>"
+        f"</a>",
+        "━━━━━━━━━━━━━━━━━━━━",
+        f"<b>Setup:</b> "
+        f"{escape(str(row.get('Reason', '')))}",
+        f"<b>Weekly RSI:</b> "
+        f"{escape(str(row.get('Current Week RSI', '')))}",
+        f"<b>Hourly RSI:</b> "
+        f"{escape(str(row.get('Current Hourly RSI', '')))}",
+        f"<b>15m Close:</b> "
+        f"{escape(str(row.get('Completed 15m Close', '')))}",
         "",
         f"<b>Universe:</b> {escape(sources)}",
         f"<b>Periods:</b> {escape(periods)}",
     ]
+
     if sectors:
-        lines.append(f"<b>Sectors:</b> {escape(sectors)}")
+        lines.append(
+            f"<b>Sectors:</b> {escape(sectors)}"
+        )
+
     if reasons:
-        lines.extend(["", f"<b>⭐ Favorite Reason(s):</b>\n• {escape(reasons)}"])
+        lines.extend([
+            "",
+            "<b>⭐ Favorite Reason(s):</b>",
+            f"• {escape(reasons)}",
+        ])
+
     if notes:
-        lines.extend(["", f"<b>📝 Favorite Note:</b> {escape(notes)}"])
-    lines.extend(["", f"<b>Scan:</b> {escape(str(row.get('Scan Time', '')))}"])
+        lines.extend([
+            "",
+            f"<b>📝 Favorite Note:</b> "
+            f"{escape(notes)}",
+        ])
+
+    lines.extend([
+        "",
+        f"<b>Scan:</b> "
+        f"{escape(str(row.get('Scan Time', '')))}",
+    ])
+
     return "\n".join(lines)
 
 
 def send_message(text):
-    url = f"https://api.telegram.org/bot{BOT_TOKEN}/sendMessage"
+    if not BOT_TOKEN or not CHAT_ID:
+        raise RuntimeError(
+            "Telegram credentials are not configured."
+        )
+
+    url = (
+        f"https://api.telegram.org/"
+        f"bot{BOT_TOKEN}/sendMessage"
+    )
+
     response = requests.post(
         url,
         json={
@@ -93,64 +181,197 @@ def send_message(text):
         },
         timeout=30,
     )
+
     response.raise_for_status()
+
     payload = response.json()
+
     if not payload.get("ok"):
         raise RuntimeError(payload)
 
 
+def send_test_message():
+    """Send one controlled Telegram test."""
+
+    test_row = {
+        "Symbol": "RELIANCE",
+        "Reason": "TEST - Weekly RSI Recovery",
+        "Current Week RSI": "52.40",
+        "Current Hourly RSI": "34.80",
+        "Completed 15m Close": "2987.50",
+        "Universe Sources": "Sector Top 5 | Favorite",
+        "Universe Periods": "Weekly",
+        "Universe Sectors": "Energy",
+        "Favorite Reasons": "Strong Momentum | RS Improving",
+        "Favorite Notes": "Waiting for breakout",
+        "Scan Time": pd.Timestamp.now(
+            tz="Asia/Kolkata"
+        ).strftime("%Y-%m-%d %H:%M:%S"),
+    }
+
+    message = build_message(test_row)
+
+    send_message(message)
+
+    print(
+        "Telegram TEST message sent successfully."
+    )
+
+
 def main():
+
     if not BOT_TOKEN or not CHAT_ID:
-        print("Telegram secrets are not configured; skipping alerts.")
-        return 0
-    if not SETUP_HISTORY.exists():
-        print("No Setup_History.csv found; nothing to alert.")
+        print(
+            "Telegram secrets are not configured; "
+            "skipping alerts."
+        )
         return 0
 
-    setups = pd.read_csv(SETUP_HISTORY, dtype=str, keep_default_na=False)
-    if setups.empty or "Setup ID" not in setups.columns:
-        print("No setup records found. Nothing to send.")
-        raise SystemExit(0)
+    # -------------------------------------------------
+    # TEMPORARY TEST MODE
+    # -------------------------------------------------
+
+    if TEST_MODE:
+        send_test_message()
+        return 0
+
+    # -------------------------------------------------
+    # NORMAL RSI ALERT MODE
+    # -------------------------------------------------
+
+    if not SETUP_HISTORY.exists():
+        print(
+            "No Setup_History.csv found; "
+            "nothing to alert."
+        )
+        return 0
+
+    setups = pd.read_csv(
+        SETUP_HISTORY,
+        dtype=str,
+        keep_default_na=False
+    )
+
+    if (
+        setups.empty
+        or "Setup ID" not in setups.columns
+    ):
+        print(
+            "No setup records found. "
+            "Nothing to send."
+        )
         return 0
 
     sent = load_alert_history()
-    pending = setups[~setups["Setup ID"].astype(str).isin(sent)]
-    pending = pending[pending["Status"].astype(str).str.upper().eq("ACTIVE")]
+
+    pending = setups[
+        ~setups["Setup ID"]
+        .astype(str)
+        .isin(sent)
+    ]
+
+    if "Status" in pending.columns:
+        pending = pending[
+            pending["Status"]
+            .astype(str)
+            .str.upper()
+            .eq("ACTIVE")
+        ]
 
     if pending.empty:
         print("No new Telegram alerts.")
         return 0
 
     sent_rows = []
-    # Setup_History does not contain every latest RSI field, so enrich from latest results.
-    latest = ROOT / "rsi" / "latest_results.csv"
-    latest_df = pd.read_csv(latest, dtype=str, keep_default_na=False) if latest.exists() else pd.DataFrame()
-    latest_map = {str(r.get("Symbol", "")).strip().upper(): r for _, r in latest_df.iterrows()}
+
+    # Setup_History doesn't contain every latest
+    # RSI field, so enrich from latest results.
+
+    latest = (
+        ROOT
+        / "rsi"
+        / "latest_results.csv"
+    )
+
+    if latest.exists():
+        latest_df = pd.read_csv(
+            latest,
+            dtype=str,
+            keep_default_na=False
+        )
+    else:
+        latest_df = pd.DataFrame()
+
+    latest_map = {
+        str(row.get("Symbol", ""))
+        .strip()
+        .upper(): row
+        for _, row in latest_df.iterrows()
+    }
 
     for _, setup in pending.iterrows():
-        symbol = str(setup.get("Symbol", "")).strip().upper()
-        row = dict(latest_map.get(symbol, {}))
-        row.update(setup.to_dict())
+
+        symbol = str(
+            setup.get("Symbol", "")
+        ).strip().upper()
+
+        row = dict(
+            latest_map.get(symbol, {})
+        )
+
+        row.update(
+            setup.to_dict()
+        )
+
         row["Symbol"] = symbol
-        # Keep latest-result values where Setup_History intentionally lacks them.
+
+        # Keep latest-result values where
+        # Setup_History doesn't contain them.
+
         if symbol in latest_map:
-            for key, value in latest_map[symbol].items():
-                if key not in row or not str(row[key]).strip():
+
+            for key, value in latest_map[
+                symbol
+            ].items():
+
+                if (
+                    key not in row
+                    or not str(row[key]).strip()
+                ):
                     row[key] = value
+
         message = build_message(row)
+
         try:
+
             send_message(message)
+
             sent_rows.append({
                 "Setup ID": setup["Setup ID"],
-                "Sent At": pd.Timestamp.now(tz="Asia/Kolkata").strftime("%Y-%m-%d %H:%M:%S"),
+                "Sent At": pd.Timestamp.now(
+                    tz="Asia/Kolkata"
+                ).strftime(
+                    "%Y-%m-%d %H:%M:%S"
+                ),
                 "Symbol": symbol,
             })
-            print(f"Telegram alert sent: {symbol}")
+
+            print(
+                f"Telegram alert sent: {symbol}"
+            )
+
         except Exception as exc:
-            print(f"ERROR sending Telegram alert for {symbol}: {exc}")
+
+            print(
+                f"ERROR sending Telegram alert "
+                f"for {symbol}: {exc}"
+            )
 
     if sent_rows:
-        append_alert_history(sent_rows)
+        append_alert_history(
+            sent_rows
+        )
+
     return 0
 
 

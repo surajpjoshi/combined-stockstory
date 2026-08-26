@@ -13,6 +13,10 @@
         rel="stylesheet"
         href="styles.css"
     >
+    <link
+        rel="stylesheet"
+        href="rsi.css"
+    >
 </head>
 
 <body>
@@ -308,6 +312,137 @@
             </div>
         </section>
 
+
+        <!-- RSI TRADING -->
+        <section class="section rsi-section" id="rsiTradingSection">
+
+            <div class="rsi-shell">
+
+                <div class="rsi-heading">
+                    <div>
+                        <span class="section-label">RSI TRADING</span>
+                        <h2>RSI Setups &amp; Monitoring</h2>
+                        <p>
+                            Live RSI scanner results, universe sources
+                            and StockStory favorite context.
+                        </p>
+                    </div>
+
+                    <div class="rsi-updated">
+                        Last scan:
+                        <strong id="rsiLastUpdated">Loading...</strong>
+                    </div>
+                </div>
+
+
+                <div class="rsi-summary">
+
+                    <div class="rsi-stat setup">
+                        <span>🔥 SETUPS</span>
+                        <strong id="rsiSetupCount">—</strong>
+                    </div>
+
+                    <div class="rsi-stat watch">
+                        <span>👀 WATCH</span>
+                        <strong id="rsiWatchCount">—</strong>
+                    </div>
+
+                    <div class="rsi-stat monitor">
+                        <span>🔴 15M MONITORING</span>
+                        <strong id="rsiMonitoringCount">—</strong>
+                    </div>
+
+                    <div class="rsi-stat favorite">
+                        <span>⭐ FAVORITES</span>
+                        <strong id="rsiFavoritesCount">—</strong>
+                    </div>
+
+                    <div class="rsi-stat">
+                        <span>TOTAL SCANNED</span>
+                        <strong id="rsiTotalCount">—</strong>
+                    </div>
+
+                </div>
+
+
+                <div class="rsi-tabs" role="tablist">
+
+                    <button
+                        class="rsi-tab active"
+                        data-rsi-tab="SETUP"
+                        type="button"
+                    >
+                        🔥 Setups
+                    </button>
+
+                    <button
+                        class="rsi-tab"
+                        data-rsi-tab="WATCH"
+                        type="button"
+                    >
+                        👀 Watch
+                    </button>
+
+                    <button
+                        class="rsi-tab"
+                        data-rsi-tab="MONITORING"
+                        type="button"
+                    >
+                        🔴 15M Monitoring
+                    </button>
+
+                    <button
+                        class="rsi-tab"
+                        data-rsi-tab="FAVORITES"
+                        type="button"
+                    >
+                        ⭐ Favorites
+                    </button>
+
+                </div>
+
+
+                <div class="table-wrap rsi-table-wrap">
+
+                    <table class="scanner-table rsi-table">
+
+                        <thead>
+                            <tr>
+                                <th>#</th>
+                                <th>Stock</th>
+                                <th>Status</th>
+                                <th>Weekly RSI</th>
+                                <th>Hourly RSI</th>
+                                <th>LTP</th>
+                                <th>Universe</th>
+                                <th>Favorite Context</th>
+                                <th>Reason</th>
+                                <th>Scan Time</th>
+                            </tr>
+                        </thead>
+
+                        <tbody id="rsiTableBody">
+
+                            <tr>
+                                <td
+                                    colspan="10"
+                                    class="loading"
+                                >
+                                    Loading RSI data...
+                                </td>
+                            </tr>
+
+                        </tbody>
+
+                    </table>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
         <!-- STOCK AREA -->
 
         <section class="section">
@@ -527,6 +662,7 @@
 
 
 <script src="app.js"></script>
+<script src="rsi.js"></script>
 
 <!-- RS HISTORY MODAL -->
 <div id="rsHistoryModal" class="rs-history-modal">
