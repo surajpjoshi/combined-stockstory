@@ -3,7 +3,7 @@ name: RSI Scanner + Telegram Alerts
 on:
   workflow_dispatch:
   schedule:
-    - cron: "*/16 * * * *"
+    - cron: "*/15 * * * *"
 
 permissions:
   contents: write
@@ -46,14 +46,16 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
           git add rsi/My-Stocks.csv
-	  git add rsi/latest_results.csv
-	  git add rsi/latest_results.json
-	  git add rsi/RSI_History.csv
+          git add rsi/latest_results.csv
+          git add rsi/latest_results.json
+          git add rsi/RSI_History.csv
           git add rsi/RSI_Monitoring_State.csv
-	  git add rsi/RSI_Scan_Cycle.json
-	  git add rsi/Setup_History.csv
-	  git add rsi/Telegram_Alert_History.csv 2>/dev/null || true
+          git add rsi/RSI_Scan_Cycle.json
+          git add rsi/Setup_History.csv
+          git add rsi/Telegram_Alert_History.csv 2>/dev/null || true
+
           if git diff --cached --quiet; then
             echo "No RSI changes to commit."
           else
