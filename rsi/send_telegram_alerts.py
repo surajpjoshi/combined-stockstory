@@ -109,7 +109,8 @@ def main():
 
     setups = pd.read_csv(SETUP_HISTORY, dtype=str, keep_default_na=False)
     if setups.empty or "Setup ID" not in setups.columns:
-        print("No setup records found.")
+        print("No setup records found. Nothing to send.")
+        raise SystemExit(0)
         return 0
 
     sent = load_alert_history()
