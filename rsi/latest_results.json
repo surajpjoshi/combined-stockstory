@@ -1,6 +1,6 @@
 [
   {
-    "Scan Time":"2026-08-30 06:59:15",
+    "Scan Time":"2026-08-30 12:43:07",
     "Symbol":"AEGISLOG",
     "Tag":"Favorite | YTD Top 50",
     "Universe Sources":"Favorite | YTD Top 50",
@@ -15,7 +15,7 @@
     "Current Week RSI":62.98,
     "Previous Week RSI":71.9,
     "Weekly RSI Change":-8.92,
-    "Current Hour":"2026-08-30 06:00",
+    "Current Hour":"2026-08-30 12:00",
     "Current Hourly RSI":34.56,
     "Previous Hourly RSI":34.87,
     "Hourly RSI Change":-0.31,
@@ -44,7 +44,7 @@
     "Reason":"Weekly RSI 62.98 > 50 + Hourly RSI touched 30 + 15m price confirmation failed (Close None <= Previous High None)"
   },
   {
-    "Scan Time":"2026-08-30 06:59:20",
+    "Scan Time":"2026-08-30 12:43:13",
     "Symbol":"CHENNPETRO",
     "Tag":"YTD Top 50",
     "Universe Sources":"YTD Top 50",
@@ -59,7 +59,7 @@
     "Current Week RSI":67.3,
     "Previous Week RSI":73.24,
     "Weekly RSI Change":-5.95,
-    "Current Hour":"2026-08-30 06:00",
+    "Current Hour":"2026-08-30 12:00",
     "Current Hourly RSI":35.3,
     "Previous Hourly RSI":37.43,
     "Hourly RSI Change":-2.13,
@@ -88,7 +88,7 @@
     "Reason":"Weekly RSI 67.30 > 50 + Hourly RSI touched 30 + 15m price confirmation failed (Close None <= Previous High None)"
   },
   {
-    "Scan Time":"2026-08-30 06:59:33",
+    "Scan Time":"2026-08-30 12:43:29",
     "Symbol":"PAYTM",
     "Tag":"Favorite | Sector Top 5",
     "Universe Sources":"Favorite | Sector Top 5",
@@ -103,7 +103,7 @@
     "Current Week RSI":75.05,
     "Previous Week RSI":74.43,
     "Weekly RSI Change":0.62,
-    "Current Hour":"2026-08-30 06:00",
+    "Current Hour":"2026-08-30 12:00",
     "Current Hourly RSI":35.96,
     "Previous Hourly RSI":35.96,
     "Hourly RSI Change":0.0,
@@ -132,7 +132,7 @@
     "Reason":"Weekly RSI 75.05 > 50, but Hourly RSI has not touched 30 (current 35.96)"
   },
   {
-    "Scan Time":"2026-08-30 06:59:25",
+    "Scan Time":"2026-08-30 12:43:19",
     "Symbol":"HONASA",
     "Tag":"YTD Top 50",
     "Universe Sources":"YTD Top 50",
@@ -147,7 +147,7 @@
     "Current Week RSI":66.98,
     "Previous Week RSI":71.23,
     "Weekly RSI Change":-4.25,
-    "Current Hour":"2026-08-30 06:00",
+    "Current Hour":"2026-08-30 12:00",
     "Current Hourly RSI":36.26,
     "Previous Hourly RSI":36.26,
     "Hourly RSI Change":0.0,
@@ -176,7 +176,7 @@
     "Reason":"Weekly RSI 66.98 > 50, but Hourly RSI has not touched 30 (current 36.26)"
   },
   {
-    "Scan Time":"2026-08-30 06:59:18",
+    "Scan Time":"2026-08-30 12:43:10",
     "Symbol":"CARTRADE",
     "Tag":"Favorite | Sector Top 5",
     "Universe Sources":"Favorite | Sector Top 5",
@@ -191,7 +191,7 @@
     "Current Week RSI":67.83,
     "Previous Week RSI":70.27,
     "Weekly RSI Change":-2.45,
-    "Current Hour":"2026-08-30 06:00",
+    "Current Hour":"2026-08-30 12:00",
     "Current Hourly RSI":37.03,
     "Previous Hourly RSI":37.86,
     "Hourly RSI Change":-0.83,
@@ -220,7 +220,7 @@
     "Reason":"Weekly RSI 67.83 > 50, but Hourly RSI has not touched 30 (current 37.03)"
   },
   {
-    "Scan Time":"2026-08-30 06:59:31",
+    "Scan Time":"2026-08-30 12:43:27",
     "Symbol":"PARAS",
     "Tag":"Favorite | Sector Top 5 | YTD Top 50",
     "Universe Sources":"Favorite | Sector Top 5 | YTD Top 50",
@@ -235,7 +235,7 @@
     "Current Week RSI":69.18,
     "Previous Week RSI":73.5,
     "Weekly RSI Change":-4.32,
-    "Current Hour":"2026-08-30 06:00",
+    "Current Hour":"2026-08-30 12:00",
     "Current Hourly RSI":41.51,
     "Previous Hourly RSI":42.21,
     "Hourly RSI Change":-0.7,
@@ -264,7 +264,7 @@
     "Reason":"Weekly RSI 69.18 > 50, but Hourly RSI has not touched 30 (current 41.51)"
   },
   {
-    "Scan Time":"2026-08-30 06:59:16",
+    "Scan Time":"2026-08-30 12:43:08",
     "Symbol":"BALRAMCHIN",
     "Tag":"Favorite | YTD Top 50",
     "Universe Sources":"Favorite | YTD Top 50",
@@ -279,7 +279,7 @@
     "Current Week RSI":63.63,
     "Previous Week RSI":80.12,
     "Weekly RSI Change":-16.5,
-    "Current Hour":"2026-08-30 06:00",
+    "Current Hour":"2026-08-30 12:00",
     "Current Hourly RSI":41.7,
     "Previous Hourly RSI":40.78,
     "Hourly RSI Change":0.91,
@@ -308,7 +308,7 @@
     "Reason":"Weekly RSI 63.63 > 50, but Hourly RSI has not touched 30 (current 41.70)"
   },
   {
-    "Scan Time":"2026-08-30 06:59:21",
+    "Scan Time":"2026-08-30 12:43:14",
     "Symbol":"DATAPATTNS",
     "Tag":"Sector Top 5 | YTD Top 50",
     "Universe Sources":"Sector Top 5 | YTD Top 50",
@@ -323,7 +323,7 @@
     "Current Week RSI":60.82,
     "Previous Week RSI":65.47,
     "Weekly RSI Change":-4.65,
-    "Current Hour":"2026-08-30 06:00",
+    "Current Hour":"2026-08-30 12:00",
     "Current Hourly RSI":42.52,
     "Previous Hourly RSI":42.86,
     "Hourly RSI Change":-0.34,
@@ -352,7 +352,7 @@
     "Reason":"Weekly RSI 60.82 > 50, but Hourly RSI has not touched 30 (current 42.52)"
   },
   {
-    "Scan Time":"2026-08-30 06:59:34",
+    "Scan Time":"2026-08-30 12:43:31",
     "Symbol":"POWERINDIA",
     "Tag":"YTD Top 50",
     "Universe Sources":"YTD Top 50",
@@ -367,7 +367,7 @@
     "Current Week RSI":55.93,
     "Previous Week RSI":58.2,
     "Weekly RSI Change":-2.27,
-    "Current Hour":"2026-08-30 06:00",
+    "Current Hour":"2026-08-30 12:00",
     "Current Hourly RSI":43.49,
     "Previous Hourly RSI":43.49,
     "Hourly RSI Change":0.0,
@@ -396,7 +396,7 @@
     "Reason":"Weekly RSI 55.93 > 50, but Hourly RSI has not touched 30 (current 43.49)"
   },
   {
-    "Scan Time":"2026-08-30 06:59:29",
+    "Scan Time":"2026-08-30 12:43:25",
     "Symbol":"NEULANDLAB",
     "Tag":"YTD Top 50",
     "Universe Sources":"YTD Top 50",
@@ -411,7 +411,7 @@
     "Current Week RSI":76.61,
     "Previous Week RSI":77.34,
     "Weekly RSI Change":-0.74,
-    "Current Hour":"2026-08-30 06:00",
+    "Current Hour":"2026-08-30 12:00",
     "Current Hourly RSI":43.73,
     "Previous Hourly RSI":43.77,
     "Hourly RSI Change":-0.04,
@@ -440,7 +440,7 @@
     "Reason":"Weekly RSI 76.61 > 50, but Hourly RSI has not touched 30 (current 43.73)"
   },
   {
-    "Scan Time":"2026-08-30 06:59:27",
+    "Scan Time":"2026-08-30 12:43:22",
     "Symbol":"J&KBANK",
     "Tag":"YTD Top 50",
     "Universe Sources":"YTD Top 50",
@@ -455,7 +455,7 @@
     "Current Week RSI":52.48,
     "Previous Week RSI":51.99,
     "Weekly RSI Change":0.48,
-    "Current Hour":"2026-08-30 06:00",
+    "Current Hour":"2026-08-30 12:00",
     "Current Hourly RSI":44.59,
     "Previous Hourly RSI":44.59,
     "Hourly RSI Change":0.0,
@@ -484,7 +484,7 @@
     "Reason":"Weekly RSI 52.48 > 50, but Hourly RSI has not touched 30 (current 44.59)"
   },
   {
-    "Scan Time":"2026-08-30 06:59:28",
+    "Scan Time":"2026-08-30 12:43:23",
     "Symbol":"MTARTECH",
     "Tag":"Sector Top 5 | YTD Top 50",
     "Universe Sources":"Sector Top 5 | YTD Top 50",
@@ -499,7 +499,7 @@
     "Current Week RSI":59.71,
     "Previous Week RSI":60.06,
     "Weekly RSI Change":-0.35,
-    "Current Hour":"2026-08-30 06:00",
+    "Current Hour":"2026-08-30 12:00",
     "Current Hourly RSI":47.12,
     "Previous Hourly RSI":47.58,
     "Hourly RSI Change":-0.45,
@@ -528,7 +528,7 @@
     "Reason":"Weekly RSI 59.71 > 50, but Hourly RSI has not touched 30 (current 47.12)"
   },
   {
-    "Scan Time":"2026-08-30 06:59:11",
+    "Scan Time":"2026-08-30 12:43:02",
     "Symbol":"ABB",
     "Tag":"YTD Top 50",
     "Universe Sources":"YTD Top 50",
@@ -543,7 +543,7 @@
     "Current Week RSI":60.22,
     "Previous Week RSI":59.13,
     "Weekly RSI Change":1.09,
-    "Current Hour":"2026-08-30 06:00",
+    "Current Hour":"2026-08-30 12:00",
     "Current Hourly RSI":48.19,
     "Previous Hourly RSI":48.19,
     "Hourly RSI Change":0.0,
@@ -572,7 +572,7 @@
     "Reason":"Weekly RSI 60.22 > 50, but Hourly RSI has not touched 30 (current 48.19)"
   },
   {
-    "Scan Time":"2026-08-30 06:59:12",
+    "Scan Time":"2026-08-30 12:43:03",
     "Symbol":"ACMESOLAR",
     "Tag":"YTD Top 50",
     "Universe Sources":"YTD Top 50",
@@ -587,7 +587,7 @@
     "Current Week RSI":67.65,
     "Previous Week RSI":70.63,
     "Weekly RSI Change":-2.98,
-    "Current Hour":"2026-08-30 06:00",
+    "Current Hour":"2026-08-30 12:00",
     "Current Hourly RSI":48.27,
     "Previous Hourly RSI":44.57,
     "Hourly RSI Change":3.7,
@@ -616,7 +616,7 @@
     "Reason":"Weekly RSI 67.65 > 50, but Hourly RSI has not touched 30 (current 48.27)"
   },
   {
-    "Scan Time":"2026-08-30 06:59:14",
+    "Scan Time":"2026-08-30 12:43:05",
     "Symbol":"ADANIENSOL",
     "Tag":"YTD Top 50",
     "Universe Sources":"YTD Top 50",
@@ -631,7 +631,7 @@
     "Current Week RSI":61.72,
     "Previous Week RSI":59.54,
     "Weekly RSI Change":2.18,
-    "Current Hour":"2026-08-30 06:00",
+    "Current Hour":"2026-08-30 12:00",
     "Current Hourly RSI":48.47,
     "Previous Hourly RSI":48.47,
     "Hourly RSI Change":0.0,
@@ -660,7 +660,7 @@
     "Reason":"Weekly RSI 61.72 > 50, but Hourly RSI has not touched 30 (current 48.47)"
   },
   {
-    "Scan Time":"2026-08-30 06:59:36",
+    "Scan Time":"2026-08-30 12:43:33",
     "Symbol":"SYRMA",
     "Tag":"YTD Top 50",
     "Universe Sources":"YTD Top 50",
@@ -675,7 +675,7 @@
     "Current Week RSI":68.64,
     "Previous Week RSI":67.21,
     "Weekly RSI Change":1.43,
-    "Current Hour":"2026-08-30 06:00",
+    "Current Hour":"2026-08-30 12:00",
     "Current Hourly RSI":49.55,
     "Previous Hourly RSI":49.75,
     "Hourly RSI Change":-0.2,
@@ -704,7 +704,7 @@
     "Reason":"Weekly RSI 68.64 > 50, but Hourly RSI has not touched 30 (current 49.55)"
   },
   {
-    "Scan Time":"2026-08-30 06:59:24",
+    "Scan Time":"2026-08-30 12:43:18",
     "Symbol":"GODREJAGRO",
     "Tag":"Favorite",
     "Universe Sources":"Favorite",
@@ -719,7 +719,7 @@
     "Current Week RSI":56.0,
     "Previous Week RSI":48.65,
     "Weekly RSI Change":7.35,
-    "Current Hour":"2026-08-30 06:00",
+    "Current Hour":"2026-08-30 12:00",
     "Current Hourly RSI":49.72,
     "Previous Hourly RSI":49.72,
     "Hourly RSI Change":0.0,
@@ -748,7 +748,7 @@
     "Reason":"Weekly RSI 56.00 > 50, but Hourly RSI has not touched 30 (current 49.72)"
   },
   {
-    "Scan Time":"2026-08-30 06:58:29",
+    "Scan Time":"2026-08-30 12:42:16",
     "Symbol":"NETWEB",
     "Tag":"YTD Top 50",
     "Universe Sources":"YTD Top 50",
@@ -763,7 +763,7 @@
     "Current Week RSI":64.46,
     "Previous Week RSI":69.72,
     "Weekly RSI Change":-5.26,
-    "Current Hour":"2026-08-30 06:00",
+    "Current Hour":"2026-08-30 12:00",
     "Current Hourly RSI":50.14,
     "Previous Hourly RSI":50.77,
     "Hourly RSI Change":-0.63,
@@ -792,7 +792,7 @@
     "Reason":"Weekly RSI 64.46 > 50; Hourly RSI 50.14; 15m confirmation checked only while monitored"
   },
   {
-    "Scan Time":"2026-08-30 06:57:10",
+    "Scan Time":"2026-08-30 12:40:41",
     "Symbol":"ALIVUS",
     "Tag":"YTD Top 50",
     "Universe Sources":"YTD Top 50",
@@ -807,7 +807,7 @@
     "Current Week RSI":73.73,
     "Previous Week RSI":73.32,
     "Weekly RSI Change":0.41,
-    "Current Hour":"2026-08-30 06:00",
+    "Current Hour":"2026-08-30 12:00",
     "Current Hourly RSI":50.26,
     "Previous Hourly RSI":50.26,
     "Hourly RSI Change":0.0,
@@ -836,7 +836,7 @@
     "Reason":"Weekly RSI 73.73 > 50; Hourly RSI 50.26; 15m confirmation checked only while monitored"
   },
   {
-    "Scan Time":"2026-08-30 06:58:24",
+    "Scan Time":"2026-08-30 12:42:10",
     "Symbol":"NATIONALUM",
     "Tag":"Sector Top 5",
     "Universe Sources":"Sector Top 5",
@@ -851,7 +851,7 @@
     "Current Week RSI":58.22,
     "Previous Week RSI":58.11,
     "Weekly RSI Change":0.11,
-    "Current Hour":"2026-08-30 06:00",
+    "Current Hour":"2026-08-30 12:00",
     "Current Hourly RSI":52.24,
     "Previous Hourly RSI":52.24,
     "Hourly RSI Change":0.0,
@@ -880,7 +880,7 @@
     "Reason":"Weekly RSI 58.22 > 50; Hourly RSI 52.24; 15m confirmation checked only while monitored"
   },
   {
-    "Scan Time":"2026-08-30 06:58:14",
+    "Scan Time":"2026-08-30 12:41:59",
     "Symbol":"MAHABANK",
     "Tag":"Favorite",
     "Universe Sources":"Favorite",
@@ -895,7 +895,7 @@
     "Current Week RSI":59.65,
     "Previous Week RSI":55.06,
     "Weekly RSI Change":4.59,
-    "Current Hour":"2026-08-30 06:00",
+    "Current Hour":"2026-08-30 12:00",
     "Current Hourly RSI":52.35,
     "Previous Hourly RSI":52.35,
     "Hourly RSI Change":0.0,
@@ -924,7 +924,7 @@
     "Reason":"Weekly RSI 59.65 > 50; Hourly RSI 52.35; 15m confirmation checked only while monitored"
   },
   {
-    "Scan Time":"2026-08-30 06:59:06",
+    "Scan Time":"2026-08-30 12:42:57",
     "Symbol":"WELSPUNLIV",
     "Tag":"YTD Top 50",
     "Universe Sources":"YTD Top 50",
@@ -939,7 +939,7 @@
     "Current Week RSI":73.89,
     "Previous Week RSI":73.5,
     "Weekly RSI Change":0.39,
-    "Current Hour":"2026-08-30 06:00",
+    "Current Hour":"2026-08-30 12:00",
     "Current Hourly RSI":52.55,
     "Previous Hourly RSI":47.92,
     "Hourly RSI Change":4.63,
@@ -968,7 +968,7 @@
     "Reason":"Weekly RSI 73.89 > 50; Hourly RSI 52.55; 15m confirmation checked only while monitored"
   },
   {
-    "Scan Time":"2026-08-30 06:59:00",
+    "Scan Time":"2026-08-30 12:42:51",
     "Symbol":"UNIMECH",
     "Tag":"Favorite | Sector Top 5 | YTD Top 50",
     "Universe Sources":"Favorite | Sector Top 5 | YTD Top 50",
@@ -983,7 +983,7 @@
     "Current Week RSI":73.49,
     "Previous Week RSI":73.07,
     "Weekly RSI Change":0.42,
-    "Current Hour":"2026-08-30 06:00",
+    "Current Hour":"2026-08-30 12:00",
     "Current Hourly RSI":52.9,
     "Previous Hourly RSI":54.75,
     "Hourly RSI Change":-1.85,
@@ -1012,7 +1012,7 @@
     "Reason":"Weekly RSI 73.49 > 50; Hourly RSI 52.90; 15m confirmation checked only while monitored"
   },
   {
-    "Scan Time":"2026-08-30 06:58:56",
+    "Scan Time":"2026-08-30 12:42:46",
     "Symbol":"STYL",
     "Tag":"Sector Top 5 | YTD Top 50",
     "Universe Sources":"Sector Top 5 | YTD Top 50",
@@ -1027,7 +1027,7 @@
     "Current Week RSI":64.69,
     "Previous Week RSI":63.29,
     "Weekly RSI Change":1.41,
-    "Current Hour":"2026-08-30 06:00",
+    "Current Hour":"2026-08-30 12:00",
     "Current Hourly RSI":54.78,
     "Previous Hourly RSI":51.74,
     "Hourly RSI Change":3.04,
@@ -1056,7 +1056,7 @@
     "Reason":"Weekly RSI 64.69 > 50; Hourly RSI 54.78; 15m confirmation checked only while monitored"
   },
   {
-    "Scan Time":"2026-08-30 06:58:15",
+    "Scan Time":"2026-08-30 12:42:01",
     "Symbol":"MANYAVAR",
     "Tag":"Favorite",
     "Universe Sources":"Favorite",
@@ -1071,7 +1071,7 @@
     "Current Week RSI":67.75,
     "Previous Week RSI":67.42,
     "Weekly RSI Change":0.34,
-    "Current Hour":"2026-08-30 06:00",
+    "Current Hour":"2026-08-30 12:00",
     "Current Hourly RSI":54.79,
     "Previous Hourly RSI":54.79,
     "Hourly RSI Change":0.0,
@@ -1100,7 +1100,7 @@
     "Reason":"Weekly RSI 67.75 > 50; Hourly RSI 54.79; 15m confirmation checked only while monitored"
   },
   {
-    "Scan Time":"2026-08-30 06:59:04",
+    "Scan Time":"2026-08-30 12:42:55",
     "Symbol":"WELCORP",
     "Tag":"Favorite | Sector Top 5 | YTD Top 50",
     "Universe Sources":"Favorite | Sector Top 5 | YTD Top 50",
@@ -1115,7 +1115,7 @@
     "Current Week RSI":93.33,
     "Previous Week RSI":92.94,
     "Weekly RSI Change":0.39,
-    "Current Hour":"2026-08-30 06:00",
+    "Current Hour":"2026-08-30 12:00",
     "Current Hourly RSI":54.88,
     "Previous Hourly RSI":52.98,
     "Hourly RSI Change":1.9,
@@ -1144,7 +1144,7 @@
     "Reason":"Weekly RSI 93.33 > 50; Hourly RSI 54.88; 15m confirmation checked only while monitored"
   },
   {
-    "Scan Time":"2026-08-30 06:59:02",
+    "Scan Time":"2026-08-30 12:42:53",
     "Symbol":"URBANCO",
     "Tag":"Favorite | Sector Top 5",
     "Universe Sources":"Favorite | Sector Top 5",
@@ -1159,7 +1159,7 @@
     "Current Week RSI":71.03,
     "Previous Week RSI":66.74,
     "Weekly RSI Change":4.29,
-    "Current Hour":"2026-08-30 06:00",
+    "Current Hour":"2026-08-30 12:00",
     "Current Hourly RSI":54.98,
     "Previous Hourly RSI":56.24,
     "Hourly RSI Change":-1.26,
@@ -1188,7 +1188,7 @@
     "Reason":"Weekly RSI 71.03 > 50; Hourly RSI 54.98; 15m confirmation checked only while monitored"
   },
   {
-    "Scan Time":"2026-08-30 06:56:53",
+    "Scan Time":"2026-08-30 12:40:25",
     "Symbol":"AARTIIND",
     "Tag":"YTD Top 50",
     "Universe Sources":"YTD Top 50",
@@ -1203,7 +1203,7 @@
     "Current Week RSI":66.26,
     "Previous Week RSI":64.11,
     "Weekly RSI Change":2.15,
-    "Current Hour":"2026-08-30 06:00",
+    "Current Hour":"2026-08-30 12:00",
     "Current Hourly RSI":55.3,
     "Previous Hourly RSI":59.28,
     "Hourly RSI Change":-3.97,
@@ -1232,7 +1232,7 @@
     "Reason":"Weekly RSI 66.26 > 50; Hourly RSI 55.30; 15m confirmation checked only while monitored"
   },
   {
-    "Scan Time":"2026-08-30 06:58:54",
+    "Scan Time":"2026-08-30 12:42:44",
     "Symbol":"SONACOMS",
     "Tag":"YTD Top 50",
     "Universe Sources":"YTD Top 50",
@@ -1247,7 +1247,7 @@
     "Current Week RSI":77.51,
     "Previous Week RSI":78.16,
     "Weekly RSI Change":-0.65,
-    "Current Hour":"2026-08-30 06:00",
+    "Current Hour":"2026-08-30 12:00",
     "Current Hourly RSI":55.7,
     "Previous Hourly RSI":55.7,
     "Hourly RSI Change":0.0,
@@ -1276,7 +1276,7 @@
     "Reason":"Weekly RSI 77.51 > 50; Hourly RSI 55.70; 15m confirmation checked only while monitored"
   },
   {
-    "Scan Time":"2026-08-30 06:57:50",
+    "Scan Time":"2026-08-30 12:41:27",
     "Symbol":"GLAND",
     "Tag":"Sector Top 5 | YTD Top 50",
     "Universe Sources":"Sector Top 5 | YTD Top 50",
@@ -1291,7 +1291,7 @@
     "Current Week RSI":72.64,
     "Previous Week RSI":71.31,
     "Weekly RSI Change":1.33,
-    "Current Hour":"2026-08-30 06:00",
+    "Current Hour":"2026-08-30 12:00",
     "Current Hourly RSI":56.99,
     "Previous Hourly RSI":56.99,
     "Hourly RSI Change":0.0,
@@ -1320,7 +1320,7 @@
     "Reason":"Weekly RSI 72.64 > 50; Hourly RSI 56.99; 15m confirmation checked only while monitored"
   },
   {
-    "Scan Time":"2026-08-30 06:58:50",
+    "Scan Time":"2026-08-30 12:42:40",
     "Symbol":"SCHNEIDER",
     "Tag":"YTD Top 50",
     "Universe Sources":"YTD Top 50",
@@ -1335,7 +1335,7 @@
     "Current Week RSI":50.79,
     "Previous Week RSI":51.7,
     "Weekly RSI Change":-0.9,
-    "Current Hour":"2026-08-30 06:00",
+    "Current Hour":"2026-08-30 12:00",
     "Current Hourly RSI":57.39,
     "Previous Hourly RSI":55.48,
     "Hourly RSI Change":1.91,
@@ -1364,7 +1364,7 @@
     "Reason":"Hourly RSI 57.39; touch <=30 recorded; waiting for 15m monitoring confirmation"
   },
   {
-    "Scan Time":"2026-08-30 06:58:52",
+    "Scan Time":"2026-08-30 12:42:42",
     "Symbol":"SOLARINDS",
     "Tag":"YTD Top 50",
     "Universe Sources":"YTD Top 50",
@@ -1379,7 +1379,7 @@
     "Current Week RSI":72.62,
     "Previous Week RSI":70.65,
     "Weekly RSI Change":1.97,
-    "Current Hour":"2026-08-30 06:00",
+    "Current Hour":"2026-08-30 12:00",
     "Current Hourly RSI":58.2,
     "Previous Hourly RSI":58.2,
     "Hourly RSI Change":0.0,
@@ -1408,7 +1408,7 @@
     "Reason":"Weekly RSI 72.62 > 50; Hourly RSI 58.20; 15m confirmation checked only while monitored"
   },
   {
-    "Scan Time":"2026-08-30 06:57:17",
+    "Scan Time":"2026-08-30 12:40:49",
     "Symbol":"ASTRAMICRO",
     "Tag":"Sector Top 5 | YTD Top 50",
     "Universe Sources":"Sector Top 5 | YTD Top 50",
@@ -1423,7 +1423,7 @@
     "Current Week RSI":63.99,
     "Previous Week RSI":62.15,
     "Weekly RSI Change":1.84,
-    "Current Hour":"2026-08-30 06:00",
+    "Current Hour":"2026-08-30 12:00",
     "Current Hourly RSI":58.47,
     "Previous Hourly RSI":56.0,
     "Hourly RSI Change":2.47,
@@ -1452,7 +1452,7 @@
     "Reason":"Weekly RSI 63.99 > 50; Hourly RSI 58.47; 15m confirmation checked only while monitored"
   },
   {
-    "Scan Time":"2026-08-30 06:57:48",
+    "Scan Time":"2026-08-30 12:41:25",
     "Symbol":"FINCABLES",
     "Tag":"YTD Top 50",
     "Universe Sources":"YTD Top 50",
@@ -1467,7 +1467,7 @@
     "Current Week RSI":68.16,
     "Previous Week RSI":66.51,
     "Weekly RSI Change":1.65,
-    "Current Hour":"2026-08-30 06:00",
+    "Current Hour":"2026-08-30 12:00",
     "Current Hourly RSI":58.48,
     "Previous Hourly RSI":60.37,
     "Hourly RSI Change":-1.89,
@@ -1496,7 +1496,7 @@
     "Reason":"Weekly RSI 68.16 > 50; Hourly RSI 58.48; 15m confirmation checked only while monitored"
   },
   {
-    "Scan Time":"2026-08-30 06:58:48",
+    "Scan Time":"2026-08-30 12:42:38",
     "Symbol":"SAILIFE",
     "Tag":"YTD Top 50",
     "Universe Sources":"YTD Top 50",
@@ -1511,7 +1511,7 @@
     "Current Week RSI":81.61,
     "Previous Week RSI":80.51,
     "Weekly RSI Change":1.1,
-    "Current Hour":"2026-08-30 06:00",
+    "Current Hour":"2026-08-30 12:00",
     "Current Hourly RSI":58.71,
     "Previous Hourly RSI":58.71,
     "Hourly RSI Change":0.0,
@@ -1540,7 +1540,7 @@
     "Reason":"Weekly RSI 81.61 > 50; Hourly RSI 58.71; 15m confirmation checked only while monitored"
   },
   {
-    "Scan Time":"2026-08-30 06:57:08",
+    "Scan Time":"2026-08-30 12:40:39",
     "Symbol":"AKUMS",
     "Tag":"YTD Top 50",
     "Universe Sources":"YTD Top 50",
@@ -1555,7 +1555,7 @@
     "Current Week RSI":74.51,
     "Previous Week RSI":72.77,
     "Weekly RSI Change":1.74,
-    "Current Hour":"2026-08-30 06:00",
+    "Current Hour":"2026-08-30 12:00",
     "Current Hourly RSI":58.85,
     "Previous Hourly RSI":60.44,
     "Hourly RSI Change":-1.59,
@@ -1584,7 +1584,7 @@
     "Reason":"Weekly RSI 74.51 > 50; Hourly RSI 58.85; 15m confirmation checked only while monitored"
   },
   {
-    "Scan Time":"2026-08-30 06:57:04",
+    "Scan Time":"2026-08-30 12:40:35",
     "Symbol":"ADANIPOWER",
     "Tag":"YTD Top 50",
     "Universe Sources":"YTD Top 50",
@@ -1599,7 +1599,7 @@
     "Current Week RSI":58.13,
     "Previous Week RSI":54.05,
     "Weekly RSI Change":4.09,
-    "Current Hour":"2026-08-30 06:00",
+    "Current Hour":"2026-08-30 12:00",
     "Current Hourly RSI":58.89,
     "Previous Hourly RSI":58.89,
     "Hourly RSI Change":0.0,
@@ -1628,7 +1628,7 @@
     "Reason":"Weekly RSI 58.13 > 50; Hourly RSI 58.89; 15m confirmation checked only while monitored"
   },
   {
-    "Scan Time":"2026-08-30 06:58:06",
+    "Scan Time":"2026-08-30 12:41:46",
     "Symbol":"JINDALSTEL",
     "Tag":"Sector Top 5",
     "Universe Sources":"Sector Top 5",
@@ -1643,7 +1643,7 @@
     "Current Week RSI":57.38,
     "Previous Week RSI":51.38,
     "Weekly RSI Change":6.0,
-    "Current Hour":"2026-08-30 06:00",
+    "Current Hour":"2026-08-30 12:00",
     "Current Hourly RSI":59.12,
     "Previous Hourly RSI":59.12,
     "Hourly RSI Change":0.0,
@@ -1672,7 +1672,7 @@
     "Reason":"Weekly RSI 57.38 > 50; Hourly RSI 59.12; 15m confirmation checked only while monitored"
   },
   {
-    "Scan Time":"2026-08-30 06:59:09",
+    "Scan Time":"2026-08-30 12:43:00",
     "Symbol":"WOCKPHARMA",
     "Tag":"Sector Top 5",
     "Universe Sources":"Sector Top 5",
@@ -1687,7 +1687,7 @@
     "Current Week RSI":61.55,
     "Previous Week RSI":58.01,
     "Weekly RSI Change":3.54,
-    "Current Hour":"2026-08-30 06:00",
+    "Current Hour":"2026-08-30 12:00",
     "Current Hourly RSI":59.4,
     "Previous Hourly RSI":58.9,
     "Hourly RSI Change":0.5,
@@ -1716,7 +1716,7 @@
     "Reason":"Weekly RSI 61.55 > 50; Hourly RSI 59.40; 15m confirmation checked only while monitored"
   },
   {
-    "Scan Time":"2026-08-30 06:58:44",
+    "Scan Time":"2026-08-30 12:42:34",
     "Symbol":"RRKABEL",
     "Tag":"YTD Top 50",
     "Universe Sources":"YTD Top 50",
@@ -1731,7 +1731,7 @@
     "Current Week RSI":78.58,
     "Previous Week RSI":79.4,
     "Weekly RSI Change":-0.82,
-    "Current Hour":"2026-08-30 06:00",
+    "Current Hour":"2026-08-30 12:00",
     "Current Hourly RSI":59.76,
     "Previous Hourly RSI":60.59,
     "Hourly RSI Change":-0.83,
@@ -1760,7 +1760,7 @@
     "Reason":"Weekly RSI 78.58 > 50; Hourly RSI 59.76; 15m confirmation checked only while monitored"
   },
   {
-    "Scan Time":"2026-08-30 06:57:55",
+    "Scan Time":"2026-08-30 12:41:32",
     "Symbol":"HINDZINC",
     "Tag":"Sector Top 5",
     "Universe Sources":"Sector Top 5",
@@ -1775,7 +1775,7 @@
     "Current Week RSI":58.39,
     "Previous Week RSI":54.87,
     "Weekly RSI Change":3.52,
-    "Current Hour":"2026-08-30 06:00",
+    "Current Hour":"2026-08-30 12:00",
     "Current Hourly RSI":59.84,
     "Previous Hourly RSI":59.84,
     "Hourly RSI Change":0.0,
@@ -1804,7 +1804,7 @@
     "Reason":"Weekly RSI 58.39 > 50; Hourly RSI 59.84; 15m confirmation checked only while monitored"
   },
   {
-    "Scan Time":"2026-08-30 06:58:09",
+    "Scan Time":"2026-08-30 12:41:51",
     "Symbol":"KIRLOSENG",
     "Tag":"YTD Top 50",
     "Universe Sources":"YTD Top 50",
@@ -1819,7 +1819,7 @@
     "Current Week RSI":59.7,
     "Previous Week RSI":59.01,
     "Weekly RSI Change":0.7,
-    "Current Hour":"2026-08-30 06:00",
+    "Current Hour":"2026-08-30 12:00",
     "Current Hourly RSI":61.14,
     "Previous Hourly RSI":58.66,
     "Hourly RSI Change":2.48,
@@ -1848,7 +1848,7 @@
     "Reason":"Weekly RSI 59.70 > 50; Hourly RSI 61.14; 15m confirmation checked only while monitored"
   },
   {
-    "Scan Time":"2026-08-30 06:57:23",
+    "Scan Time":"2026-08-30 12:40:57",
     "Symbol":"BBTC",
     "Tag":"Favorite",
     "Universe Sources":"Favorite",
@@ -1863,7 +1863,7 @@
     "Current Week RSI":50.86,
     "Previous Week RSI":36.46,
     "Weekly RSI Change":14.39,
-    "Current Hour":"2026-08-30 06:00",
+    "Current Hour":"2026-08-30 12:00",
     "Current Hourly RSI":61.38,
     "Previous Hourly RSI":61.9,
     "Hourly RSI Change":-0.52,
@@ -1892,7 +1892,7 @@
     "Reason":"Weekly RSI 50.86 > 50; Hourly RSI 61.38; 15m confirmation checked only while monitored"
   },
   {
-    "Scan Time":"2026-08-30 06:57:20",
+    "Scan Time":"2026-08-30 12:40:53",
     "Symbol":"AUROPHARMA",
     "Tag":"Sector Top 5",
     "Universe Sources":"Sector Top 5",
@@ -1907,7 +1907,7 @@
     "Current Week RSI":68.59,
     "Previous Week RSI":66.96,
     "Weekly RSI Change":1.63,
-    "Current Hour":"2026-08-30 06:00",
+    "Current Hour":"2026-08-30 12:00",
     "Current Hourly RSI":61.93,
     "Previous Hourly RSI":61.93,
     "Hourly RSI Change":0.0,
@@ -1936,7 +1936,7 @@
     "Reason":"Weekly RSI 68.59 > 50; Hourly RSI 61.93; 15m confirmation checked only while monitored"
   },
   {
-    "Scan Time":"2026-08-30 06:57:28",
+    "Scan Time":"2026-08-30 12:41:01",
     "Symbol":"BHEL",
     "Tag":"YTD Top 50",
     "Universe Sources":"YTD Top 50",
@@ -1951,7 +1951,7 @@
     "Current Week RSI":65.91,
     "Previous Week RSI":62.61,
     "Weekly RSI Change":3.29,
-    "Current Hour":"2026-08-30 06:00",
+    "Current Hour":"2026-08-30 12:00",
     "Current Hourly RSI":62.46,
     "Previous Hourly RSI":62.46,
     "Hourly RSI Change":0.0,
@@ -1980,7 +1980,7 @@
     "Reason":"Weekly RSI 65.91 > 50; Hourly RSI 62.46; 15m confirmation checked only while monitored"
   },
   {
-    "Scan Time":"2026-08-30 06:57:14",
+    "Scan Time":"2026-08-30 12:40:46",
     "Symbol":"APARINDS",
     "Tag":"YTD Top 50",
     "Universe Sources":"YTD Top 50",
@@ -1995,7 +1995,7 @@
     "Current Week RSI":75.02,
     "Previous Week RSI":72.04,
     "Weekly RSI Change":2.98,
-    "Current Hour":"2026-08-30 06:00",
+    "Current Hour":"2026-08-30 12:00",
     "Current Hourly RSI":62.55,
     "Previous Hourly RSI":60.62,
     "Hourly RSI Change":1.93,
@@ -2024,7 +2024,7 @@
     "Reason":"Weekly RSI 75.02 > 50; Hourly RSI 62.55; 15m confirmation checked only while monitored"
   },
   {
-    "Scan Time":"2026-08-30 06:57:45",
+    "Scan Time":"2026-08-30 12:41:20",
     "Symbol":"ENGINERSIN",
     "Tag":"Favorite",
     "Universe Sources":"Favorite",
@@ -2039,7 +2039,7 @@
     "Current Week RSI":60.54,
     "Previous Week RSI":57.41,
     "Weekly RSI Change":3.13,
-    "Current Hour":"2026-08-30 06:00",
+    "Current Hour":"2026-08-30 12:00",
     "Current Hourly RSI":62.56,
     "Previous Hourly RSI":63.61,
     "Hourly RSI Change":-1.05,
@@ -2068,7 +2068,7 @@
     "Reason":"Weekly RSI 60.54 > 50; Hourly RSI 62.56; 15m confirmation checked only while monitored"
   },
   {
-    "Scan Time":"2026-08-30 06:58:04",
+    "Scan Time":"2026-08-30 12:41:44",
     "Symbol":"JINDALSAW",
     "Tag":"Favorite | YTD Top 50",
     "Universe Sources":"Favorite | YTD Top 50",
@@ -2083,7 +2083,7 @@
     "Current Week RSI":70.72,
     "Previous Week RSI":67.32,
     "Weekly RSI Change":3.4,
-    "Current Hour":"2026-08-30 06:00",
+    "Current Hour":"2026-08-30 12:00",
     "Current Hourly RSI":62.7,
     "Previous Hourly RSI":63.65,
     "Hourly RSI Change":-0.94,
@@ -2112,7 +2112,7 @@
     "Reason":"Weekly RSI 70.72 > 50; Hourly RSI 62.70; 15m confirmation checked only while monitored"
   },
   {
-    "Scan Time":"2026-08-30 06:58:25",
+    "Scan Time":"2026-08-30 12:42:13",
     "Symbol":"NAVINFLUOR",
     "Tag":"YTD Top 50",
     "Universe Sources":"YTD Top 50",
@@ -2127,7 +2127,7 @@
     "Current Week RSI":77.82,
     "Previous Week RSI":74.43,
     "Weekly RSI Change":3.39,
-    "Current Hour":"2026-08-30 06:00",
+    "Current Hour":"2026-08-30 12:00",
     "Current Hourly RSI":63.11,
     "Previous Hourly RSI":63.11,
     "Hourly RSI Change":0.0,
@@ -2156,7 +2156,7 @@
     "Reason":"Weekly RSI 77.82 > 50; Hourly RSI 63.11; 15m confirmation checked only while monitored"
   },
   {
-    "Scan Time":"2026-08-30 06:58:42",
+    "Scan Time":"2026-08-30 12:42:32",
     "Symbol":"RKFORGE",
     "Tag":"YTD Top 50",
     "Universe Sources":"YTD Top 50",
@@ -2171,7 +2171,7 @@
     "Current Week RSI":74.02,
     "Previous Week RSI":72.78,
     "Weekly RSI Change":1.24,
-    "Current Hour":"2026-08-30 06:00",
+    "Current Hour":"2026-08-30 12:00",
     "Current Hourly RSI":64.42,
     "Previous Hourly RSI":66.28,
     "Hourly RSI Change":-1.85,
@@ -2200,7 +2200,7 @@
     "Reason":"Weekly RSI 74.02 > 50; Hourly RSI 64.42; 15m confirmation checked only while monitored"
   },
   {
-    "Scan Time":"2026-08-30 06:58:34",
+    "Scan Time":"2026-08-30 12:42:21",
     "Symbol":"OFSS",
     "Tag":"Sector Top 5 | YTD Top 50",
     "Universe Sources":"Sector Top 5 | YTD Top 50",
@@ -2215,7 +2215,7 @@
     "Current Week RSI":69.45,
     "Previous Week RSI":66.76,
     "Weekly RSI Change":2.69,
-    "Current Hour":"2026-08-30 06:00",
+    "Current Hour":"2026-08-30 12:00",
     "Current Hourly RSI":65.38,
     "Previous Hourly RSI":65.38,
     "Hourly RSI Change":0.0,
@@ -2244,7 +2244,7 @@
     "Reason":"Weekly RSI 69.45 > 50; Hourly RSI 65.38; 15m confirmation checked only while monitored"
   },
   {
-    "Scan Time":"2026-08-30 06:58:58",
+    "Scan Time":"2026-08-30 12:42:49",
     "Symbol":"TECHM",
     "Tag":"Sector Top 5",
     "Universe Sources":"Sector Top 5",
@@ -2259,7 +2259,7 @@
     "Current Week RSI":59.99,
     "Previous Week RSI":56.15,
     "Weekly RSI Change":3.84,
-    "Current Hour":"2026-08-30 06:00",
+    "Current Hour":"2026-08-30 12:00",
     "Current Hourly RSI":66.08,
     "Previous Hourly RSI":66.08,
     "Hourly RSI Change":0.0,
@@ -2288,7 +2288,7 @@
     "Reason":"Weekly RSI 59.99 > 50; Hourly RSI 66.08; 15m confirmation checked only while monitored"
   },
   {
-    "Scan Time":"2026-08-30 06:58:12",
+    "Scan Time":"2026-08-30 12:41:57",
     "Symbol":"LTM",
     "Tag":"Sector Top 5",
     "Universe Sources":"Sector Top 5",
@@ -2303,7 +2303,7 @@
     "Current Week RSI":55.57,
     "Previous Week RSI":51.42,
     "Weekly RSI Change":4.16,
-    "Current Hour":"2026-08-30 06:00",
+    "Current Hour":"2026-08-30 12:00",
     "Current Hourly RSI":66.75,
     "Previous Hourly RSI":66.75,
     "Hourly RSI Change":0.0,
@@ -2332,7 +2332,7 @@
     "Reason":"Weekly RSI 55.57 > 50; Hourly RSI 66.75; 15m confirmation checked only while monitored"
   },
   {
-    "Scan Time":"2026-08-30 06:57:40",
+    "Scan Time":"2026-08-30 12:41:15",
     "Symbol":"CYIENTDLM",
     "Tag":"Sector Top 5 | YTD Top 50",
     "Universe Sources":"Sector Top 5 | YTD Top 50",
@@ -2347,7 +2347,7 @@
     "Current Week RSI":89.07,
     "Previous Week RSI":85.46,
     "Weekly RSI Change":3.61,
-    "Current Hour":"2026-08-30 06:00",
+    "Current Hour":"2026-08-30 12:00",
     "Current Hourly RSI":66.77,
     "Previous Hourly RSI":67.64,
     "Hourly RSI Change":-0.87,
@@ -2376,7 +2376,7 @@
     "Reason":"Weekly RSI 89.07 > 50; Hourly RSI 66.77; 15m confirmation checked only while monitored"
   },
   {
-    "Scan Time":"2026-08-30 06:57:59",
+    "Scan Time":"2026-08-30 12:41:37",
     "Symbol":"IFCI",
     "Tag":"YTD Top 50",
     "Universe Sources":"YTD Top 50",
@@ -2391,7 +2391,7 @@
     "Current Week RSI":67.85,
     "Previous Week RSI":61.85,
     "Weekly RSI Change":6.01,
-    "Current Hour":"2026-08-30 06:00",
+    "Current Hour":"2026-08-30 12:00",
     "Current Hourly RSI":66.85,
     "Previous Hourly RSI":68.48,
     "Hourly RSI Change":-1.64,
@@ -2420,7 +2420,7 @@
     "Reason":"Weekly RSI 67.85 > 50; Hourly RSI 66.85; 15m confirmation checked only while monitored"
   },
   {
-    "Scan Time":"2026-08-30 06:58:01",
+    "Scan Time":"2026-08-30 12:41:40",
     "Symbol":"INOXINDIA",
     "Tag":"Favorite | YTD Top 50",
     "Universe Sources":"Favorite | YTD Top 50",
@@ -2435,7 +2435,7 @@
     "Current Week RSI":78.17,
     "Previous Week RSI":71.46,
     "Weekly RSI Change":6.72,
-    "Current Hour":"2026-08-30 06:00",
+    "Current Hour":"2026-08-30 12:00",
     "Current Hourly RSI":66.94,
     "Previous Hourly RSI":65.56,
     "Hourly RSI Change":1.39,
@@ -2464,7 +2464,7 @@
     "Reason":"Weekly RSI 78.17 > 50; Hourly RSI 66.94; 15m confirmation checked only while monitored"
   },
   {
-    "Scan Time":"2026-08-30 06:57:02",
+    "Scan Time":"2026-08-30 12:40:33",
     "Symbol":"ADANIENT",
     "Tag":"Sector Top 5 | YTD Top 50",
     "Universe Sources":"Sector Top 5 | YTD Top 50",
@@ -2479,7 +2479,7 @@
     "Current Week RSI":67.64,
     "Previous Week RSI":62.13,
     "Weekly RSI Change":5.51,
-    "Current Hour":"2026-08-30 06:00",
+    "Current Hour":"2026-08-30 12:00",
     "Current Hourly RSI":66.95,
     "Previous Hourly RSI":66.95,
     "Hourly RSI Change":0.0,
@@ -2508,7 +2508,7 @@
     "Reason":"Weekly RSI 67.64 > 50; Hourly RSI 66.95; 15m confirmation checked only while monitored"
   },
   {
-    "Scan Time":"2026-08-30 06:57:31",
+    "Scan Time":"2026-08-30 12:41:05",
     "Symbol":"CGCL",
     "Tag":"YTD Top 50",
     "Universe Sources":"YTD Top 50",
@@ -2523,7 +2523,7 @@
     "Current Week RSI":69.22,
     "Previous Week RSI":57.69,
     "Weekly RSI Change":11.53,
-    "Current Hour":"2026-08-30 06:00",
+    "Current Hour":"2026-08-30 12:00",
     "Current Hourly RSI":67.66,
     "Previous Hourly RSI":67.13,
     "Hourly RSI Change":0.54,
@@ -2552,7 +2552,7 @@
     "Reason":"Weekly RSI 69.22 > 50; Hourly RSI 67.66; 15m confirmation checked only while monitored"
   },
   {
-    "Scan Time":"2026-08-30 06:57:53",
+    "Scan Time":"2026-08-30 12:41:30",
     "Symbol":"HFCL",
     "Tag":"YTD Top 50",
     "Universe Sources":"YTD Top 50",
@@ -2567,7 +2567,7 @@
     "Current Week RSI":81.07,
     "Previous Week RSI":77.32,
     "Weekly RSI Change":3.75,
-    "Current Hour":"2026-08-30 06:00",
+    "Current Hour":"2026-08-30 12:00",
     "Current Hourly RSI":67.67,
     "Previous Hourly RSI":69.97,
     "Hourly RSI Change":-2.3,
@@ -2596,7 +2596,7 @@
     "Reason":"Weekly RSI 81.07 > 50; Hourly RSI 67.67; 15m confirmation checked only while monitored"
   },
   {
-    "Scan Time":"2026-08-30 06:58:20",
+    "Scan Time":"2026-08-30 12:42:06",
     "Symbol":"MCX",
     "Tag":"YTD Top 50",
     "Universe Sources":"YTD Top 50",
@@ -2611,7 +2611,7 @@
     "Current Week RSI":69.59,
     "Previous Week RSI":66.46,
     "Weekly RSI Change":3.12,
-    "Current Hour":"2026-08-30 06:00",
+    "Current Hour":"2026-08-30 12:00",
     "Current Hourly RSI":67.82,
     "Previous Hourly RSI":67.82,
     "Hourly RSI Change":0.0,
@@ -2640,7 +2640,7 @@
     "Reason":"Weekly RSI 69.59 > 50; Hourly RSI 67.82; 15m confirmation checked only while monitored"
   },
   {
-    "Scan Time":"2026-08-30 06:57:26",
+    "Scan Time":"2026-08-30 12:40:59",
     "Symbol":"BEML",
     "Tag":"Sector Top 5",
     "Universe Sources":"Sector Top 5",
@@ -2655,7 +2655,7 @@
     "Current Week RSI":61.27,
     "Previous Week RSI":58.92,
     "Weekly RSI Change":2.35,
-    "Current Hour":"2026-08-30 06:00",
+    "Current Hour":"2026-08-30 12:00",
     "Current Hourly RSI":68.05,
     "Previous Hourly RSI":66.86,
     "Hourly RSI Change":1.18,
@@ -2684,7 +2684,7 @@
     "Reason":"Weekly RSI 61.27 > 50; Hourly RSI 68.05; 15m confirmation checked only while monitored"
   },
   {
-    "Scan Time":"2026-08-30 06:58:07",
+    "Scan Time":"2026-08-30 12:41:49",
     "Symbol":"JYOTICNC",
     "Tag":"Favorite",
     "Universe Sources":"Favorite",
@@ -2699,7 +2699,7 @@
     "Current Week RSI":70.38,
     "Previous Week RSI":67.61,
     "Weekly RSI Change":2.76,
-    "Current Hour":"2026-08-30 06:00",
+    "Current Hour":"2026-08-30 12:00",
     "Current Hourly RSI":68.06,
     "Previous Hourly RSI":64.8,
     "Hourly RSI Change":3.26,
@@ -2728,7 +2728,7 @@
     "Reason":"Weekly RSI 70.38 > 50; Hourly RSI 68.06; 15m confirmation checked only while monitored"
   },
   {
-    "Scan Time":"2026-08-30 06:58:39",
+    "Scan Time":"2026-08-30 12:42:28",
     "Symbol":"PERSISTENT",
     "Tag":"Sector Top 5",
     "Universe Sources":"Sector Top 5",
@@ -2743,7 +2743,7 @@
     "Current Week RSI":62.4,
     "Previous Week RSI":58.98,
     "Weekly RSI Change":3.42,
-    "Current Hour":"2026-08-30 06:00",
+    "Current Hour":"2026-08-30 12:00",
     "Current Hourly RSI":69.23,
     "Previous Hourly RSI":69.23,
     "Hourly RSI Change":0.0,
@@ -2772,7 +2772,7 @@
     "Reason":"Weekly RSI 62.40 > 50; Hourly RSI 69.23; 15m confirmation checked only while monitored"
   },
   {
-    "Scan Time":"2026-08-30 06:57:12",
+    "Scan Time":"2026-08-30 12:40:43",
     "Symbol":"ANANDRATHI",
     "Tag":"YTD Top 50",
     "Universe Sources":"YTD Top 50",
@@ -2787,7 +2787,7 @@
     "Current Week RSI":76.61,
     "Previous Week RSI":75.43,
     "Weekly RSI Change":1.19,
-    "Current Hour":"2026-08-30 06:00",
+    "Current Hour":"2026-08-30 12:00",
     "Current Hourly RSI":69.55,
     "Previous Hourly RSI":69.55,
     "Hourly RSI Change":0.0,
@@ -2816,7 +2816,7 @@
     "Reason":"Weekly RSI 76.61 > 50; Hourly RSI 69.55; 15m confirmation checked only while monitored"
   },
   {
-    "Scan Time":"2026-08-30 06:58:46",
+    "Scan Time":"2026-08-30 12:42:36",
     "Symbol":"SAIL",
     "Tag":"Sector Top 5",
     "Universe Sources":"Sector Top 5",
@@ -2831,7 +2831,7 @@
     "Current Week RSI":65.7,
     "Previous Week RSI":53.16,
     "Weekly RSI Change":12.55,
-    "Current Hour":"2026-08-30 06:00",
+    "Current Hour":"2026-08-30 12:00",
     "Current Hourly RSI":72.73,
     "Previous Hourly RSI":72.73,
     "Hourly RSI Change":0.0,
@@ -2860,7 +2860,7 @@
     "Reason":"Weekly RSI 65.70 > 50; Hourly RSI 72.73; 15m confirmation checked only while monitored"
   },
   {
-    "Scan Time":"2026-08-30 06:58:32",
+    "Scan Time":"2026-08-30 12:42:20",
     "Symbol":"NEWGEN",
     "Tag":"Favorite",
     "Universe Sources":"Favorite",
@@ -2875,7 +2875,7 @@
     "Current Week RSI":53.22,
     "Previous Week RSI":47.14,
     "Weekly RSI Change":6.08,
-    "Current Hour":"2026-08-30 06:00",
+    "Current Hour":"2026-08-30 12:00",
     "Current Hourly RSI":73.87,
     "Previous Hourly RSI":73.37,
     "Hourly RSI Change":0.5,
@@ -2904,7 +2904,7 @@
     "Reason":"Weekly RSI 53.22 > 50; Hourly RSI 73.87; 15m confirmation checked only while monitored"
   },
   {
-    "Scan Time":"2026-08-30 06:58:27",
+    "Scan Time":"2026-08-30 12:42:14",
     "Symbol":"NAZARA",
     "Tag":"Favorite | Sector Top 5",
     "Universe Sources":"Favorite | Sector Top 5",
@@ -2919,7 +2919,7 @@
     "Current Week RSI":75.79,
     "Previous Week RSI":71.92,
     "Weekly RSI Change":3.87,
-    "Current Hour":"2026-08-30 06:00",
+    "Current Hour":"2026-08-30 12:00",
     "Current Hourly RSI":74.08,
     "Previous Hourly RSI":73.4,
     "Hourly RSI Change":0.68,
@@ -2948,7 +2948,7 @@
     "Reason":"Weekly RSI 75.79 > 50; Hourly RSI 74.08; 15m confirmation checked only while monitored"
   },
   {
-    "Scan Time":"2026-08-30 06:57:36",
+    "Scan Time":"2026-08-30 12:41:11",
     "Symbol":"CRAFTSMAN",
     "Tag":"YTD Top 50",
     "Universe Sources":"YTD Top 50",
@@ -2963,7 +2963,7 @@
     "Current Week RSI":72.78,
     "Previous Week RSI":69.91,
     "Weekly RSI Change":2.86,
-    "Current Hour":"2026-08-30 06:00",
+    "Current Hour":"2026-08-30 12:00",
     "Current Hourly RSI":74.16,
     "Previous Hourly RSI":73.26,
     "Hourly RSI Change":0.9,
@@ -2992,7 +2992,7 @@
     "Reason":"Weekly RSI 72.78 > 50; Hourly RSI 74.16; 15m confirmation checked only while monitored"
   },
   {
-    "Scan Time":"2026-08-30 06:57:43",
+    "Scan Time":"2026-08-30 12:41:19",
     "Symbol":"DIVISLAB",
     "Tag":"Sector Top 5 | YTD Top 50",
     "Universe Sources":"Sector Top 5 | YTD Top 50",
@@ -3007,7 +3007,7 @@
     "Current Week RSI":87.74,
     "Previous Week RSI":84.24,
     "Weekly RSI Change":3.5,
-    "Current Hour":"2026-08-30 06:00",
+    "Current Hour":"2026-08-30 12:00",
     "Current Hourly RSI":74.7,
     "Previous Hourly RSI":74.7,
     "Hourly RSI Change":0.0,
@@ -3036,7 +3036,7 @@
     "Reason":"Weekly RSI 87.74 > 50; Hourly RSI 74.70; 15m confirmation checked only while monitored"
   },
   {
-    "Scan Time":"2026-08-30 06:58:11",
+    "Scan Time":"2026-08-30 12:41:54",
     "Symbol":"LAURUSLABS",
     "Tag":"Sector Top 5 | YTD Top 50",
     "Universe Sources":"Sector Top 5 | YTD Top 50",
@@ -3051,7 +3051,7 @@
     "Current Week RSI":83.52,
     "Previous Week RSI":80.05,
     "Weekly RSI Change":3.47,
-    "Current Hour":"2026-08-30 06:00",
+    "Current Hour":"2026-08-30 12:00",
     "Current Hourly RSI":77.68,
     "Previous Hourly RSI":77.68,
     "Hourly RSI Change":0.0,
@@ -3080,7 +3080,7 @@
     "Reason":"Weekly RSI 83.52 > 50; Hourly RSI 77.68; 15m confirmation checked only while monitored"
   },
   {
-    "Scan Time":"2026-08-30 06:58:18",
+    "Scan Time":"2026-08-30 12:42:03",
     "Symbol":"MASTEK",
     "Tag":"Favorite",
     "Universe Sources":"Favorite",
@@ -3095,7 +3095,7 @@
     "Current Week RSI":57.05,
     "Previous Week RSI":47.58,
     "Weekly RSI Change":9.47,
-    "Current Hour":"2026-08-30 06:00",
+    "Current Hour":"2026-08-30 12:00",
     "Current Hourly RSI":77.71,
     "Previous Hourly RSI":87.15,
     "Hourly RSI Change":-9.43,
@@ -3124,7 +3124,7 @@
     "Reason":"Weekly RSI 57.05 > 50; Hourly RSI 77.71; 15m confirmation checked only while monitored"
   },
   {
-    "Scan Time":"2026-08-30 06:57:15",
+    "Scan Time":"2026-08-30 12:40:47",
     "Symbol":"APLAPOLLO",
     "Tag":"Sector Top 5",
     "Universe Sources":"Sector Top 5",
@@ -3139,7 +3139,7 @@
     "Current Week RSI":69.71,
     "Previous Week RSI":64.67,
     "Weekly RSI Change":5.04,
-    "Current Hour":"2026-08-30 06:00",
+    "Current Hour":"2026-08-30 12:00",
     "Current Hourly RSI":78.21,
     "Previous Hourly RSI":78.21,
     "Hourly RSI Change":0.0,
@@ -3168,7 +3168,7 @@
     "Reason":"Weekly RSI 69.71 > 50; Hourly RSI 78.21; 15m confirmation checked only while monitored"
   },
   {
-    "Scan Time":"2026-08-30 06:57:38",
+    "Scan Time":"2026-08-30 12:41:13",
     "Symbol":"CYIENT",
     "Tag":"Favorite",
     "Universe Sources":"Favorite",
@@ -3183,7 +3183,7 @@
     "Current Week RSI":67.67,
     "Previous Week RSI":47.35,
     "Weekly RSI Change":20.32,
-    "Current Hour":"2026-08-30 06:00",
+    "Current Hour":"2026-08-30 12:00",
     "Current Hourly RSI":79.76,
     "Previous Hourly RSI":82.64,
     "Hourly RSI Change":-2.88,
@@ -3212,7 +3212,7 @@
     "Reason":"Weekly RSI 67.67 > 50; Hourly RSI 79.76; 15m confirmation checked only while monitored"
   },
   {
-    "Scan Time":"2026-08-30 06:57:34",
+    "Scan Time":"2026-08-30 12:41:08",
     "Symbol":"COFORGE",
     "Tag":"Sector Top 5",
     "Universe Sources":"Sector Top 5",
@@ -3227,7 +3227,7 @@
     "Current Week RSI":73.94,
     "Previous Week RSI":70.36,
     "Weekly RSI Change":3.58,
-    "Current Hour":"2026-08-30 06:00",
+    "Current Hour":"2026-08-30 12:00",
     "Current Hourly RSI":81.56,
     "Previous Hourly RSI":81.56,
     "Hourly RSI Change":0.0,
@@ -3256,7 +3256,7 @@
     "Reason":"Weekly RSI 73.94 > 50; Hourly RSI 81.56; 15m confirmation checked only while monitored"
   },
   {
-    "Scan Time":"2026-08-30 06:57:19",
+    "Scan Time":"2026-08-30 12:40:51",
     "Symbol":"ATHERENERG",
     "Tag":"Favorite | YTD Top 50",
     "Universe Sources":"Favorite | YTD Top 50",
@@ -3271,7 +3271,7 @@
     "Current Week RSI":79.94,
     "Previous Week RSI":75.96,
     "Weekly RSI Change":3.99,
-    "Current Hour":"2026-08-30 06:00",
+    "Current Hour":"2026-08-30 12:00",
     "Current Hourly RSI":82.74,
     "Previous Hourly RSI":82.74,
     "Hourly RSI Change":0.0,
@@ -3300,7 +3300,7 @@
     "Reason":"Weekly RSI 79.94 > 50; Hourly RSI 82.74; 15m confirmation checked only while monitored"
   },
   {
-    "Scan Time":"2026-08-30 06:59:22",
+    "Scan Time":"2026-08-30 12:43:16",
     "Symbol":"FACT",
     "Tag":"Favorite",
     "Universe Sources":"Favorite",
@@ -3315,7 +3315,7 @@
     "Current Week RSI":48.13,
     "Previous Week RSI":39.84,
     "Weekly RSI Change":8.29,
-    "Current Hour":"2026-08-30 06:00",
+    "Current Hour":"2026-08-30 12:00",
     "Current Hourly RSI":43.43,
     "Previous Hourly RSI":44.19,
     "Hourly RSI Change":-0.76,
@@ -3344,7 +3344,7 @@
     "Reason":"Weekly RSI 48.13 <= 50"
   },
   {
-    "Scan Time":"2026-08-30 06:59:08",
+    "Scan Time":"2026-08-30 12:42:59",
     "Symbol":"WHIRLPOOL",
     "Tag":"Favorite",
     "Universe Sources":"Favorite",
@@ -3359,7 +3359,7 @@
     "Current Week RSI":45.35,
     "Previous Week RSI":38.25,
     "Weekly RSI Change":7.1,
-    "Current Hour":"2026-08-30 06:00",
+    "Current Hour":"2026-08-30 12:00",
     "Current Hourly RSI":60.38,
     "Previous Hourly RSI":61.62,
     "Hourly RSI Change":-1.24,
