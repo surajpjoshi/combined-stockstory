@@ -130,6 +130,19 @@
     "Top Stock RS": 25.664882
   },
   {
+    "Index / Sector": "niftyindiadefence",
+    "Stocks": 18,
+    "Successful": 18,
+    "Average 3M Return": 3.670792,
+    "Average RS 3M": 6.52771,
+    "Median RS 3M": -2.86437,
+    "Positive RS %": 44.444444,
+    "RS > +5 %": 33.333333,
+    "RS > +10 %": 22.222222,
+    "Top Stock": "CYIENTDLM",
+    "Top Stock RS": 91.837862
+  },
+  {
     "Index / Sector": "niftymedia",
     "Stocks": 10,
     "Successful": 10,
@@ -141,19 +154,6 @@
     "RS > +10 %": 30.0,
     "Top Stock": "PFOCUS",
     "Top Stock RS": 60.002321
-  },
-  {
-    "Index / Sector": "niftyindiadefence",
-    "Stocks": 17,
-    "Successful": 17,
-    "Average 3M Return": 1.35878,
-    "Average RS 3M": 4.215698,
-    "Median RS 3M": -3.333817,
-    "Positive RS %": 41.176471,
-    "RS > +5 %": 29.411765,
-    "RS > +10 %": 17.647059,
-    "Top Stock": "CYIENTDLM",
-    "Top Stock RS": 91.837862
   },
   {
     "Index / Sector": "niftymidsmallfinancailservice",
